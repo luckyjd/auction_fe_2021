@@ -72,6 +72,12 @@ export default {
       this.submitted = false;
       this.tutorial = {};
     }
+  },
+  mounted() {
+    // // add external script hereeee
+    // let recaptchaScript = document.createElement('script')
+    // recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js')
+    // document.head.appendChild(recaptchaScript)
   }
 };
 </script>
