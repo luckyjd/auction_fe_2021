@@ -209,6 +209,86 @@
               </div>
             </div>
           </div>
+          <div class="col-4 p-0 auction-today-post p-2">
+            <div class="auction-today-post-single">
+              <img src="~@/assets/image/auction-today-post/img.png">
+              <div class="row row-no-margin p-2 font-10">
+                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá hiện tại:</div>
+                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá khởi điểm:</div>
+                  <div class="text-gray ">36.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Kết thúc:</div>
+                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 p-0 auction-today-post p-2">
+            <div class="auction-today-post-single">
+              <img src="~@/assets/image/auction-today-post/img3.png">
+              <div class="row row-no-margin p-2 font-10">
+                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá hiện tại:</div>
+                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá khởi điểm:</div>
+                  <div class="text-gray ">36.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Kết thúc:</div>
+                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 p-0 auction-today-post p-2">
+            <div class="auction-today-post-single">
+              <img src="~@/assets/image/auction-today-post/img3.png">
+              <div class="row row-no-margin p-2 font-10">
+                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá hiện tại:</div>
+                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá khởi điểm:</div>
+                  <div class="text-gray ">36.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Kết thúc:</div>
+                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 p-0 auction-today-post p-2">
+            <div class="auction-today-post-single">
+              <img src="~@/assets/image/auction-today-post/img3.png">
+              <div class="row row-no-margin p-2 font-10">
+                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá hiện tại:</div>
+                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá khởi điểm:</div>
+                  <div class="text-gray ">36.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Kết thúc:</div>
+                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="auction-notification col-3 p-3">
