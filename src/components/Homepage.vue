@@ -294,11 +294,139 @@
       <div class="auction-notification col-3 p-3">
         <div class="col-12 p-0 font-weight-bolder font-16 text-center">Thông báo đấu giá</div>
         <div class="font-12 col-12" style="color: #000000;">write text</div>
-        <div class="col-12 p-0 auction-notification-post">
-
+        <div class="col-12 p-0 auction-notification-post pb-2">
+          <div class="auction-notification-post-single">
+            <img src="~@/assets/image/revolution-slider/bg-slide-3.jpg">
+            <div class="row row-no-margin p-2 font-10">
+              <div class="font-12 text-gray">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description font-12 ">
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 p-0 auction-notification-post pb-2">
+          <div class="auction-notification-post-single">
+            <img src="~@/assets/image/revolution-slider/bg-slide-3.jpg">
+            <div class="row row-no-margin p-2 font-10">
+              <div class="font-12 text-gray">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description font-12 ">
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div> <!--  end aution-info-wrapper  -->
+    <div class="auction-news-wrapper col-12 p-0">
+      <div class="row row-no-margin auction-news p-3">
+        <div class="col-12 p-0 font-weight-bolder font-16">Tin tức</div>
+        <div class="col-4 p-0 auction-news-post p-2">
+          <div class="auction-news-post-single">
+            <img src="~@/assets/image/auction-today-post/img3.png">
+            <div class="row row-no-margin p-2 font-10">
+              <div class="font-12 text-gray">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description font-12 ">
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 p-0 auction-news-post p-2">
+          <div class="auction-news-post-single">
+            <img src="~@/assets/image/auction-today-post/img2.png">
+            <div class="row row-no-margin p-2 font-10">
+              <div class="font-12 text-gray">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description font-12 ">
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 p-0 auction-news-post p-2">
+          <div class="auction-news-post-single">
+            <img src="~@/assets/image/auction-today-post/img.png">
+            <div class="row row-no-margin p-2 font-10">
+              <div class="font-12 text-gray">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description font-12 ">
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 p-0 auction-news-post p-2">
+          <div class="auction-news-post-single">
+            <img src="~@/assets/image/auction-today-post/img.png">
+            <div class="row row-no-margin p-2 font-10">
+              <div class="font-12 text-gray">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description font-12 ">
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 p-0 auction-news-post p-2">
+          <div class="auction-news-post-single">
+            <img src="~@/assets/image/auction-today-post/img3.png">
+            <div class="row row-no-margin p-2 font-10">
+              <div class="font-12 text-gray">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description font-12 ">
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 p-0 auction-news-post p-2">
+          <div class="auction-news-post-single">
+            <img src="~@/assets/image/auction-today-post/img3.png">
+            <div class="row row-no-margin p-2 font-10">
+              <div class="font-12 text-gray">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description font-12 ">
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 p-0 auction-news-post p-2">
+          <div class="auction-news-post-single">
+            <img src="~@/assets/image/auction-today-post/img3.png">
+            <div class="row row-no-margin p-2 font-10">
+              <div class="font-12 text-gray">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description font-12 ">
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+                Auction today post title description description description description long long long , so long , so long ,so long
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </template>
