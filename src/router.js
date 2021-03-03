@@ -13,9 +13,9 @@ export default new Router({
       children : [
         {
           path: "/",
-          alias : "/tutorials",
-          name: "tutorials",
-          component: () => import("./components/TutorialsList")
+          alias : "/home",
+          name: "homepage",
+          component: () => import("./components/Homepage")
         },
         {
           path: "/tutorials/:id",

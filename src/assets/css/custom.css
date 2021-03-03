@@ -1,0 +1,241 @@
+html, body {
+    font-family: Maven Pro, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.font-8{
+    font-size: 8px;
+}
+.font-10{
+    font-size: 10px;
+}
+.font-12{
+    font-size: 12px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-20{
+    font-size: 20px;
+}
+.text-red{
+    color: red;
+}
+.text-gray{
+    color: gray;
+}
+.text-black{
+    color: black;
+}
+/*custom input-placeholder*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 14px;
+    color: #555555;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+    color: #555555;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 14px;
+    color: #555555;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 14px;
+    color: #555555;
+}
+#main-container{
+
+}
+
+#header-container{
+    padding: 0 98px;
+}
+#page-content{
+    padding: 24px 98px;
+    background-color: #F6F7FB;
+}
+
+.row-no-margin{
+    margin-right: 0;
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+}
+.top-banner-container{
+    border-bottom: 1px solid rosybrown;
+    padding: 5px;
+}
+
+.hammer-icon{
+    background: transparent url('~@/assets/svg/hammer.svg') 0 0 no-repeat padding-box;
+    height: 40px;
+    width: 40px;
+}
+.banner-text{
+    letter-spacing: 0;
+    color: #000000;
+}
+#header-container a{
+    font-size: 14px;
+    color: #000000;
+    padding-right: 30px;
+}
+#header-container .active{
+    color: #713C39;
+}
+#header-container .user-info i{
+    font-size: 20px;
+    padding-left: 16px;
+}
+#header-container .user-info i:last-child{
+    color: #B7B7B7;
+    font-size: 32px;
+    padding-left: 30px;
+}
+.search-icon{
+    background: transparent url('~@/assets/svg/search.svg') 0 0 no-repeat padding-box;
+    height: 24px;
+    width: 24px;
+}
+.search-group {
+    background-color: #F0F0F0;
+    border-radius: 4px;
+}
+.search-group input{
+    background-color: inherit;
+}
+.nar-product-h {
+    background-color: #713C39;
+}
+.mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mainmenu a {
+    display: block;
+    /*background-color: #CCC;*/
+    text-decoration: none;
+    padding: 10px 16px 10px 30px;
+    color: #fff;
+}
+.mainmenu a:hover {
+    background-color: #5A302E;
+}
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+}
+.submenu a {
+    background-color: #999;
+}
+.submenu a:hover {
+    background-color: #666;
+}
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}
+.nar-product-h .hotline{
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid white;
+}
+.hotline p{
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 12px;
+}
+.auction-process-wrapper{
+    background-color: #ffffff;
+    padding: 0;
+    margin: 16px 0;
+}
+.auction-process-step i{
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 4px;
+}
+.auction-process-step .step-icon div {
+    font-size: 13px;
+}
+.auction-process-step i span{
+    padding: 3px;
+    color: #000000;
+    font-family: Maven Pro, Helvetica, sans-serif;
+}
+.auction-process-step .step-cover {
+    background-color: inherit;
+}
+.auction-process-step .step-cover div {
+    border-radius: 4px;
+}
+.auction-process-step .step-cover .step-1{
+    background-color: #DFF4F4;
+}
+.auction-process-step .step-cover .step-2{
+    background-color: #FBEECD;
+}
+.auction-process-step .step-cover .step-3{
+    background-color: #DFE4FD;
+}
+.auction-process-step .step-cover .step-4{
+    background-color: #DFF4F4;
+}
+.auction-process-step .step-cover .step-5{
+    background-color: #FBEECD;
+}
+.auction-process-step .step-cover .step-6{
+    background-color: #DFE4FD;
+}
+.auction-process-step .step-cover .step-1 i{
+    color: #42b983;
+}
+.auction-process-step .step-cover .step-2 i{
+    color: #f3bd37;
+}
+.auction-process-step .step-cover .step-3 i{
+    color: #3f5bec;
+}
+.auction-process-step .step-cover .step-4 i{
+    color: #42b983;
+}
+.auction-process-step .step-cover .step-5 i{
+    color: #f3bd37;
+}
+.auction-process-step .step-cover .step-6 i{
+    color: #3f5bec;
+}
+.auction-info-wrapper{
+    background-color: inherit;
+}
+.auction-today {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+}
+.auction-notification {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+}
+.auction-today-post .auction-today-post-single{
+    border: 1px solid #B7B7B7;
+}
+.auction-today-post img{
+    height: auto;
+    min-height: 160px;
+    width: 100%;
+}
+.auction-notification-post{
+    height: 200px;
+    border: 1px solid #B7B7B7;
+}

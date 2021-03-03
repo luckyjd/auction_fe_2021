@@ -1,0 +1,259 @@
+<template>
+  <div class="row row-no-margin p-0">
+    <div class="nar-product-slide-wrapper row-no-margin col-12 p-0 d-flex justify-content-center">
+      <div class="nar-product-h col-3 p-0 position-relative">
+        <ul class="mainmenu pt-3">
+          <li><a href="">Tài sản thanh lý</a>
+            <ul class="submenu">
+              <li><a href="">Tài sản công</a></li>
+              <li><a href="">Tài sản của tổ chức khác</a></li>
+            </ul>
+          </li>
+          <li><a href="">Tài sản phát mại</a></li>
+          <li><a href="">QSD đất để NN giao đất</a></li>
+          <li><a href="">Tang vật bị tịch thu</a></li>
+          <li><a href="">Ts đặc biệt- TS khác</a></li>
+        </ul>
+        <div class="position-absolute hotline">
+          <p>Hotline 0976 448 446</p>
+        </div>
+      </div>
+      <div class="rev_slider_wrapper col-9 p-0">
+        <b-carousel
+            id="carousel-1"
+            v-model="slide"
+            :interval="3000"
+            controls
+            indicators
+            background="#ccc"
+            img-width="900"
+            img-height="320"
+            style="text-shadow: 1px 1px 2px #000;"
+            @sliding-start="onSlideStart"
+            @sliding-end="onSlideEnd"
+        >
+          <!-- Text slides with image -->
+          <b-carousel-slide
+              caption="First slide"
+              text="Test slide of nhattx. Custom text here"
+              img-src="~@/assets/image/revolution-slider/bg-slide-3.jpg"
+          ></b-carousel-slide>
+
+          <b-carousel-slide
+              caption="Second slide"
+              text="Test slide of nhattx. Custom text here"
+              img-src="~@/assets/image/revolution-slider/bg-slide-2.jpg"
+          ></b-carousel-slide>
+
+          <b-carousel-slide
+              caption="Third slide"
+              text="Test slide of nhattx. Custom text here"
+              img-src="~@/assets/image/revolution-slider/bg-slide-1.jpg"
+          ></b-carousel-slide>
+
+  <!--         Slides with custom text-->
+  <!--        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">-->
+  <!--          <h1>Hello world!</h1>-->
+  <!--        </b-carousel-slide>-->
+
+          <!-- Slides with img slot -->
+          <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+  <!--        <b-carousel-slide>-->
+  <!--          <template v-slot:img>-->
+  <!--            <img-->
+  <!--                class="d-block img-fluid w-100"-->
+  <!--                width="1170"-->
+  <!--                height="320"-->
+  <!--                src="https://picsum.photos/1024/480/?image=52"-->
+  <!--                alt="image slot"-->
+  <!--            >-->
+  <!--          </template>-->
+  <!--        </b-carousel-slide>-->
+
+          <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+  <!--        <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">-->
+  <!--          <p>-->
+  <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt-->
+  <!--            a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.-->
+  <!--          </p>-->
+  <!--        </b-carousel-slide>-->
+        </b-carousel>
+      </div>
+    </div><!--    end nar-product-slide-wrapper-->
+    <div class="auction-process-wrapper col-12 p-3">
+      <div class="col-12 p-0">
+        <p class="font-weight-bolder">Quy trình đấu giá</p>
+      </div>
+      <div class="col-12 p-0 auction-process-step d-flex justify-content-center">
+        <div class="step-cover col-2 p-0 pr-3">
+          <div class="step-1 p-2">
+            <div class="step-icon d-flex justify-content-start align-items-center">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
+              <div class="pl-2">Bước 1 </div>
+            </div>
+            <div class="p-1 font-weight-bold">Thông báo đấu giá</div>
+          </div>
+        </div>
+        <div class="step-cover col-2 p-0 pr-3">
+          <div class="step-2 p-2">
+            <div class="step-icon d-flex justify-content-start align-items-center">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+              <div class="pl-2">Bước 2 </div>
+            </div>
+            <div class="p-1 font-weight-bold">Xem sản phẩm đấu giá</div>
+          </div>
+        </div>
+        <div class="step-cover col-2 p-0 pr-3">
+          <div class="step-3 p-2">
+            <div class="step-icon d-flex justify-content-start align-items-center">
+              <i class="fa fa-credit-card-alt " aria-hidden="true"></i>
+              <div class="pl-2">Bước 3 </div>
+            </div>
+            <div class="p-1 font-weight-bold">Đặt cọc tiền đấu giá</div>
+          </div>
+        </div>
+        <div class="step-cover col-2 p-0 pr-3">
+          <div class="step-4 p-2">
+            <div class="step-icon d-flex justify-content-start align-items-center">
+              <i class="fa fa-gavel" aria-hidden="true"></i>
+              <div class="pl-2">Bước 4 </div>
+            </div>
+            <div class="p-1 font-weight-bold">Tham gia đấu giá</div>
+          </div>
+        </div>
+        <div class="step-cover col-2 p-0 pr-3">
+          <div class="step-5 p-2">
+            <div class="step-icon d-flex justify-content-start align-items-center">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <div class="pl-2">Bước 5 </div>
+            </div>
+            <div class="p-1 font-weight-bold">Đấu giá thành công</div>
+          </div>
+        </div>
+        <div class="step-cover col-2 p-0">
+          <div class="step-6 p-2">
+            <div class="step-icon d-flex justify-content-start align-items-center">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              <div class="pl-2">Bước 6 </div>
+            </div>
+            <div class="p-1 font-weight-bold">Quyết toán </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end auction-process-wrapper-->
+    <div class="auction-info-wrapper col-12 p-0 d-flex justify-content-center">
+      <div class="col-9 p-0 pr-4">
+        <div class="row row-no-margin auction-today p-3">
+          <div class="col-12 p-0 font-weight-bolder font-16">Đấu giá hôm nay</div>
+          <div class="col-12 p-0 d-flex justify-content-between">
+            <div class="font-12" style="color: #8A91A1;">8 sản phẩm</div>
+            <div class="font-12" style="color: #274AF2;">Xem tất cả</div>
+          </div>
+          <div class="col-4 p-0 auction-today-post p-2">
+            <div class="auction-today-post-single">
+              <img src="~@/assets/image/auction-today-post/img3.png">
+              <div class="row row-no-margin p-2 font-10">
+                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá hiện tại:</div>
+                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá khởi điểm:</div>
+                  <div class="text-gray ">36.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Kết thúc:</div>
+                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 p-0 auction-today-post p-2">
+            <div class="auction-today-post-single">
+              <img src="~@/assets/image/auction-today-post/img2.png">
+              <div class="row row-no-margin p-2 font-10">
+                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá hiện tại:</div>
+                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá khởi điểm:</div>
+                  <div class="text-gray ">36.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Kết thúc:</div>
+                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 p-0 auction-today-post p-2">
+            <div class="auction-today-post-single">
+              <img src="~@/assets/image/auction-today-post/img.png">
+              <div class="row row-no-margin p-2 font-10">
+                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá hiện tại:</div>
+                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Giá khởi điểm:</div>
+                  <div class="text-gray ">36.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray">Kết thúc:</div>
+                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="auction-notification col-3 p-3">
+        <div class="col-12 p-0 font-weight-bolder font-16 text-center">Thông báo đấu giá</div>
+        <div class="font-12 col-12" style="color: #000000;">write text</div>
+        <div class="col-12 p-0 auction-notification-post">
+
+        </div>
+      </div>
+    </div> <!--  end aution-info-wrapper  -->
+  </div>
+
+</template>
+
+<script>
+
+
+export default {
+  name: "homepage",
+  data() {
+    return {
+      slide: 0,
+      sliding: null
+    };
+  },
+  methods: {
+    onSlideStart() {
+      this.sliding = true
+    },
+    onSlideEnd() {
+      this.sliding = false
+    }
+  },
+  mounted() {
+      // add external script hereeee
+      // let recaptchaScript = document.createElement('script')
+      // let recaptchaScript2 = document.createElement('script')
+      // recaptchaScript.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+      // recaptchaScript2.setAttribute('src', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+      // document.head.appendChild(recaptchaScript)
+      // document.head.appendChild(recaptchaScript2)
+  }
+};
+</script>
+
+<style>
+
+</style>
