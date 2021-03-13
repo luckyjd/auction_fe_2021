@@ -29,6 +29,26 @@ html, body {
 .text-black{
     color: black;
 }
+.font-light{
+    font-weight: 300;
+}
+.font-regular{
+    font-weight: 400;
+}
+.font-medium{
+    font-weight: 500;
+}
+.font-semi-bold{
+    font-weight: 600;
+}
+.font-bold{
+    font-weight: 700;
+}
+.font-extra-bold{
+    font-weight: 800;
+}
+
+
 /*custom input-placeholder*/
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-size: 14px;
@@ -65,7 +85,7 @@ html, body {
     width: 100%;
 }
 .top-banner-container{
-    border-bottom: 1px solid rosybrown;
+    /* border-bottom: 1px solid rosybrown; */
     padding: 5px;
 }
 
@@ -82,6 +102,11 @@ html, body {
     font-size: 14px;
     color: #000000;
     padding-right: 30px;
+    font-weight: 500;
+}
+#header-container a:hover{
+    color: #713C39;
+    text-decoration: underline;
 }
 #header-container .active{
     color: #713C39;
@@ -108,12 +133,20 @@ html, body {
     background-color: inherit;
 }
 .nar-product-h {
+    max-width: 270px;
     background-color: #713C39;
+    border-radius: 4px 0 0 4px;
+}
+.rev-slider-wrapper{
+    border-radius: 0 4px 4px 0;
 }
 .mainmenu, .submenu {
+    border-radius: 0 4px 4px 0;
     list-style: none;
     padding: 0;
     margin: 0;
+    border-left: 0.1px solid #B7B7B7;
+
 }
 .mainmenu a {
     display: block;
@@ -125,20 +158,32 @@ html, body {
 .mainmenu a:hover {
     background-color: #5A302E;
 }
+.mainmenu li .submenu {
+    top: 0;
+    left: 100%;
+    width: 80%;
+    z-index: 100;
+}
 .mainmenu li:hover .submenu {
     display: block;
     max-height: 200px;
 }
 .submenu a {
-    background-color: #999;
-}
-.submenu a:hover {
-    background-color: #666;
+    background-color: #713C39;
 }
 .submenu {
     overflow: hidden;
     max-height: 0;
     -webkit-transition: all 0.5s ease-out;
+}
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.carousel-indicators .active{
+    opacity: 1;
+    background-color: #713C39;
 }
 .nar-product-h .hotline{
     bottom: 0;
@@ -240,11 +285,23 @@ html, body {
     height:320px;
     background: #713C39;
 }
+#footer-container .license{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ffffff;
+}
+#footer-container .license div{
+    text-align: center;
+    display: block;
+    color: #ffffff;
+}
+
 .auction-notification-post .auction-notification-post-single{
     /*border: 1px solid #B7B7B7;*/
 }
 .auction-notification-post-single-description{
-    max-height: 70px;
+    max-height: 85px;
     overflow: hidden;
 }
 .auction-notification-post-single-title{
@@ -267,4 +324,12 @@ html, body {
     height: auto;
     min-height: 160px;
     width: 100%;
+}
+.footer-wrapper{
+    padding: 24px 98px;
+    background-color: inherit;
+    /* margin-right: 0;
+    margin-left: 0;
+    height: calc(100% - 49px);
+    width: 100%; */
 }

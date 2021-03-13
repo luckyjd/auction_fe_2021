@@ -1,10 +1,10 @@
 <template>
   <div class="row row-no-margin p-0">
-    <div class="nar-product-slide-wrapper row-no-margin col-12 p-0 d-flex justify-content-center">
-      <div class="nar-product-h col-3 p-0 position-relative">
+    <div class="nar-product-slide-wrapper row-no-margin col-12 p-0 d-flex justify-content-start">
+      <div class="nar-product-h p-0 col-3 position-relative">
         <ul class="mainmenu pt-3">
-          <li><a href="">Tài sản thanh lý</a>
-            <ul class="submenu">
+          <li class="position-relative"><a href="">Tài sản thanh lý</a>
+            <ul class="submenu position-absolute">
               <li><a href="">Tài sản công</a></li>
               <li><a href="">Tài sản của tổ chức khác</a></li>
             </ul>
@@ -18,7 +18,7 @@
           <p>Hotline 0976 448 446</p>
         </div>
       </div>
-      <div class="rev_slider_wrapper col-9 p-0">
+      <div class="rev-slider-wrapper col-9 p-0">
         <b-carousel
             id="carousel-1"
             v-model="slide"
@@ -34,20 +34,14 @@
         >
           <!-- Text slides with image -->
           <b-carousel-slide
-              caption="First slide"
-              text="Test slide of nhattx. Custom text here"
               img-src="~@/assets/image/revolution-slider/bg-slide-3.jpg"
           ></b-carousel-slide>
 
           <b-carousel-slide
-              caption="Second slide"
-              text="Test slide of nhattx. Custom text here"
               img-src="~@/assets/image/revolution-slider/bg-slide-2.jpg"
           ></b-carousel-slide>
 
           <b-carousel-slide
-              caption="Third slide"
-              text="Test slide of nhattx. Custom text here"
               img-src="~@/assets/image/revolution-slider/bg-slide-1.jpg"
           ></b-carousel-slide>
 
@@ -82,61 +76,61 @@
     </div><!--    end nar-product-slide-wrapper-->
     <div class="auction-process-wrapper col-12 p-3">
       <div class="col-12 p-0">
-        <p class="font-weight-bolder">Quy trình đấu giá</p>
+        <p class="font-bold">Quy trình đấu giá</p>
       </div>
       <div class="col-12 p-0 auction-process-step d-flex justify-content-center">
         <div class="step-cover col-2 p-0 pr-3">
           <div class="step-1 p-2">
             <div class="step-icon d-flex justify-content-start align-items-center">
               <i class="fa fa-file-text" aria-hidden="true"></i>
-              <div class="pl-2">Bước 1 </div>
+              <div class="pl-2 font-regular">Bước 1 </div>
             </div>
-            <div class="p-1 font-weight-bold">Thông báo đấu giá</div>
+            <div class="p-1 font-medium">Thông báo đấu giá</div>
           </div>
         </div>
         <div class="step-cover col-2 p-0 pr-3">
           <div class="step-2 p-2">
             <div class="step-icon d-flex justify-content-start align-items-center">
               <i class="fa fa-eye" aria-hidden="true"></i>
-              <div class="pl-2">Bước 2 </div>
+              <div class="pl-2 font-regular">Bước 2 </div>
             </div>
-            <div class="p-1 font-weight-bold">Xem sản phẩm đấu giá</div>
+            <div class="p-1 font-medium">Xem sản phẩm đấu giá</div>
           </div>
         </div>
         <div class="step-cover col-2 p-0 pr-3">
           <div class="step-3 p-2">
             <div class="step-icon d-flex justify-content-start align-items-center">
               <i class="fa fa-credit-card-alt " aria-hidden="true"></i>
-              <div class="pl-2">Bước 3 </div>
+              <div class="pl-2 font-regular">Bước 3 </div>
             </div>
-            <div class="p-1 font-weight-bold">Đặt cọc tiền đấu giá</div>
+            <div class="p-1 font-medium">Đặt cọc tiền đấu giá</div>
           </div>
         </div>
         <div class="step-cover col-2 p-0 pr-3">
           <div class="step-4 p-2">
             <div class="step-icon d-flex justify-content-start align-items-center">
               <i class="fa fa-gavel" aria-hidden="true"></i>
-              <div class="pl-2">Bước 4 </div>
+              <div class="pl-2 font-regular">Bước 4 </div>
             </div>
-            <div class="p-1 font-weight-bold">Tham gia đấu giá</div>
+            <div class="p-1 font-medium">Tham gia đấu giá</div>
           </div>
         </div>
         <div class="step-cover col-2 p-0 pr-3">
           <div class="step-5 p-2">
             <div class="step-icon d-flex justify-content-start align-items-center">
               <i class="fa fa-check-circle" aria-hidden="true"></i>
-              <div class="pl-2">Bước 5 </div>
+              <div class="pl-2 font-regular">Bước 5 </div>
             </div>
-            <div class="p-1 font-weight-bold">Đấu giá thành công</div>
+            <div class="p-1 font-medium">Đấu giá thành công</div>
           </div>
         </div>
         <div class="step-cover col-2 p-0">
           <div class="step-6 p-2">
             <div class="step-icon d-flex justify-content-start align-items-center">
               <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-              <div class="pl-2">Bước 6 </div>
+              <div class="pl-2 font-regular">Bước 6 </div>
             </div>
-            <div class="p-1 font-weight-bold">Quyết toán </div>
+            <div class="p-1 font-medium">Quyết toán </div>
           </div>
         </div>
       </div>
@@ -144,27 +138,27 @@
     <div class="auction-info-wrapper col-12 p-0 d-flex justify-content-center">
       <div class="col-9 p-0 pr-4">
         <div class="row row-no-margin auction-today p-3">
-          <div class="col-12 p-0 font-weight-bolder font-16">Đấu giá hôm nay</div>
+          <div class="col-12 p-0 font-bold font-20 pb-1">Đấu giá hôm nay</div>
           <div class="col-12 p-0 d-flex justify-content-between">
-            <div class="font-12" style="color: #8A91A1;">8 sản phẩm</div>
-            <div class="font-12" style="color: #274AF2;">Xem tất cả</div>
+            <div class="font-14 font-medium" style="color: #8A91A1;">8 sản phẩm</div>
+            <div class="font-14 font-medium" style="color: #274AF2;">Xem tất cả</div>
           </div>
           <div class="col-4 p-0 auction-today-post p-2">
             <div class="auction-today-post-single">
               <img src="~@/assets/image/auction-today-post/img3.png">
-              <div class="row row-no-margin p-2 font-10">
-                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+              <div class="row row-no-margin p-2 font-14">
+                <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá hiện tại:</div>
-                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá hiện tại:</div>
+                  <div class="text-red font-bold">120.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá khởi điểm:</div>
-                  <div class="text-gray ">36.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá khởi điểm:</div>
+                  <div class="text-gray font-regular">36.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Kết thúc:</div>
-                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                  <div class="text-gray font-regular">Kết thúc:</div>
+                  <div class="font-bold">09:00 - 15/11/2020</div>
                 </div>
               </div>
             </div>
@@ -172,39 +166,19 @@
           <div class="col-4 p-0 auction-today-post p-2">
             <div class="auction-today-post-single">
               <img src="~@/assets/image/auction-today-post/img2.png">
-              <div class="row row-no-margin p-2 font-10">
-                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+              <div class="row row-no-margin p-2 font-14">
+                <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá hiện tại:</div>
-                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá hiện tại:</div>
+                  <div class="text-red font-bold">120.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá khởi điểm:</div>
-                  <div class="text-gray ">36.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá khởi điểm:</div>
+                  <div class="text-gray font-regular">36.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Kết thúc:</div>
-                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4 p-0 auction-today-post p-2">
-            <div class="auction-today-post-single">
-              <img src="~@/assets/image/auction-today-post/img.png">
-              <div class="row row-no-margin p-2 font-10">
-                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
-                <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá hiện tại:</div>
-                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
-                </div>
-                <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá khởi điểm:</div>
-                  <div class="text-gray ">36.000.000 đ</div>
-                </div>
-                <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Kết thúc:</div>
-                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                  <div class="text-gray font-regular">Kết thúc:</div>
+                  <div class="font-bold">09:00 - 15/11/2020</div>
                 </div>
               </div>
             </div>
@@ -212,19 +186,39 @@
           <div class="col-4 p-0 auction-today-post p-2">
             <div class="auction-today-post-single">
               <img src="~@/assets/image/auction-today-post/img.png">
-              <div class="row row-no-margin p-2 font-10">
-                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+              <div class="row row-no-margin p-2 font-14">
+                <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá hiện tại:</div>
-                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá hiện tại:</div>
+                  <div class="text-red font-bold">120.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá khởi điểm:</div>
-                  <div class="text-gray ">36.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá khởi điểm:</div>
+                  <div class="text-gray font-regular">36.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Kết thúc:</div>
-                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                  <div class="text-gray font-regular">Kết thúc:</div>
+                  <div class="font-bold">09:00 - 15/11/2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 p-0 auction-today-post p-2">
+            <div class="auction-today-post-single">
+              <img src="~@/assets/image/auction-today-post/img.png">
+              <div class="row row-no-margin p-2 font-14">
+                <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray font-regular">Giá hiện tại:</div>
+                  <div class="text-red font-bold">120.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray font-regular">Giá khởi điểm:</div>
+                  <div class="text-gray font-regular">36.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray font-regular">Kết thúc:</div>
+                  <div class="font-bold">09:00 - 15/11/2020</div>
                 </div>
               </div>
             </div>
@@ -232,39 +226,19 @@
           <div class="col-4 p-0 auction-today-post p-2">
             <div class="auction-today-post-single">
               <img src="~@/assets/image/auction-today-post/img3.png">
-              <div class="row row-no-margin p-2 font-10">
-                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+              <div class="row row-no-margin p-2 font-14">
+                <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá hiện tại:</div>
-                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá hiện tại:</div>
+                  <div class="text-red font-bold">120.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá khởi điểm:</div>
-                  <div class="text-gray ">36.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá khởi điểm:</div>
+                  <div class="text-gray font-regular">36.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Kết thúc:</div>
-                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4 p-0 auction-today-post p-2">
-            <div class="auction-today-post-single">
-              <img src="~@/assets/image/auction-today-post/img3.png">
-              <div class="row row-no-margin p-2 font-10">
-                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
-                <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá hiện tại:</div>
-                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
-                </div>
-                <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá khởi điểm:</div>
-                  <div class="text-gray ">36.000.000 đ</div>
-                </div>
-                <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Kết thúc:</div>
-                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                  <div class="text-gray font-regular">Kết thúc:</div>
+                  <div class="font-bold">09:00 - 15/11/2020</div>
                 </div>
               </div>
             </div>
@@ -272,19 +246,39 @@
           <div class="col-4 p-0 auction-today-post p-2">
             <div class="auction-today-post-single">
               <img src="~@/assets/image/auction-today-post/img3.png">
-              <div class="row row-no-margin p-2 font-10">
-                <div class="font-12 font-weight-bold">This is auction-today-post title long long long long </div>
+              <div class="row row-no-margin p-2 font-14">
+                <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá hiện tại:</div>
-                  <div class="text-red font-weight-bolder">120.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá hiện tại:</div>
+                  <div class="text-red font-bold">120.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Giá khởi điểm:</div>
-                  <div class="text-gray ">36.000.000 đ</div>
+                  <div class="text-gray font-regular">Giá khởi điểm:</div>
+                  <div class="text-gray font-regular">36.000.000 đ</div>
                 </div>
                 <div class="col-12 p-0 d-flex justify-content-between">
-                  <div class="text-gray">Kết thúc:</div>
-                  <div class="font-weight-bold">09:00 - 15/11/2020</div>
+                  <div class="text-gray font-regular">Kết thúc:</div>
+                  <div class="font-bold">09:00 - 15/11/2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 p-0 auction-today-post p-2">
+            <div class="auction-today-post-single">
+              <img src="~@/assets/image/auction-today-post/img3.png">
+              <div class="row row-no-margin p-2 font-14">
+                <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray font-regular">Giá hiện tại:</div>
+                  <div class="text-red font-bold">120.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray font-regular">Giá khởi điểm:</div>
+                  <div class="text-gray font-regular">36.000.000 đ</div>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between">
+                  <div class="text-gray font-regular">Kết thúc:</div>
+                  <div class="font-bold">09:00 - 15/11/2020</div>
                 </div>
               </div>
             </div>
@@ -292,15 +286,15 @@
         </div>
       </div>
       <div class="auction-notification col-3 p-3">
-        <div class="col-12 p-0 font-weight-bolder font-16 text-center">Thông báo đấu giá</div>
-        <div class="font-12 col-12" style="color: #000000;">write text</div>
+        <div class="col-12 p-0 font-bold font-16 text-center pb-4">Thông báo đấu giá</div>
+        <!-- <div class="font-12 col-12" style="color: #000000;"></div> -->
         <div class="col-12 p-0 auction-notification-post pb-2">
           <div class="auction-notification-post-single">
             <img src="~@/assets/image/revolution-slider/bg-slide-3.jpg">
-            <div class="row row-no-margin p-2 font-10">
-              <div class="font-12 text-gray">30/10/2020 </div>
-              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
-              <div class="auction-notification-post-single-description font-12 ">
+            <div class="row row-no-margin p-2 font-14">
+              <div class="text-gray font-regular pb-2">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-bold pb-2">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description ">
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
@@ -311,10 +305,10 @@
         <div class="col-12 p-0 auction-notification-post pb-2">
           <div class="auction-notification-post-single">
             <img src="~@/assets/image/revolution-slider/bg-slide-3.jpg">
-            <div class="row row-no-margin p-2 font-10">
-              <div class="font-12 text-gray">30/10/2020 </div>
-              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
-              <div class="auction-notification-post-single-description font-12 ">
+            <div class="row row-no-margin p-2 font-14">
+              <div class="text-gray font-regular pb-2">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-bold pb-2">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description ">
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
@@ -326,14 +320,14 @@
     </div> <!--  end aution-info-wrapper  -->
     <div class="auction-news-wrapper col-12 p-0">
       <div class="row row-no-margin auction-news p-3">
-        <div class="col-12 p-0 font-weight-bolder font-16">Tin tức</div>
+        <div class="col-12 p-0 font-bold font-20 pb-2">Tin tức</div>
         <div class="col-4 p-0 auction-news-post p-2">
           <div class="auction-news-post-single">
             <img src="~@/assets/image/auction-today-post/img3.png">
-            <div class="row row-no-margin p-2 font-10">
-              <div class="font-12 text-gray">30/10/2020 </div>
-              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
-              <div class="auction-notification-post-single-description font-12 ">
+            <div class="row row-no-margin p-2 font-14">
+              <div class="text-gray font-regular pb-2">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-bold pb-2">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description">
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
@@ -344,10 +338,10 @@
         <div class="col-4 p-0 auction-news-post p-2">
           <div class="auction-news-post-single">
             <img src="~@/assets/image/auction-today-post/img2.png">
-            <div class="row row-no-margin p-2 font-10">
-              <div class="font-12 text-gray">30/10/2020 </div>
-              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
-              <div class="auction-notification-post-single-description font-12 ">
+            <div class="row row-no-margin p-2 font-14">
+              <div class="font-regular text-gray pb-2">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-bold pb-2">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description">
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
@@ -358,10 +352,10 @@
         <div class="col-4 p-0 auction-news-post p-2">
           <div class="auction-news-post-single">
             <img src="~@/assets/image/auction-today-post/img.png">
-            <div class="row row-no-margin p-2 font-10">
-              <div class="font-12 text-gray">30/10/2020 </div>
-              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
-              <div class="auction-notification-post-single-description font-12 ">
+            <div class="row row-no-margin p-2 font-14">
+              <div class="font-regular text-gray pb-2">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-bold pb-2">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description">
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
@@ -372,10 +366,10 @@
         <div class="col-4 p-0 auction-news-post p-2">
           <div class="auction-news-post-single">
             <img src="~@/assets/image/auction-today-post/img.png">
-            <div class="row row-no-margin p-2 font-10">
-              <div class="font-12 text-gray">30/10/2020 </div>
-              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
-              <div class="auction-notification-post-single-description font-12 ">
+            <div class="row row-no-margin p-2 font-14">
+              <div class="font-regular text-gray pb-2">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-bold pb-2">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description">
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
@@ -386,10 +380,10 @@
         <div class="col-4 p-0 auction-news-post p-2">
           <div class="auction-news-post-single">
             <img src="~@/assets/image/auction-today-post/img3.png">
-            <div class="row row-no-margin p-2 font-10">
-              <div class="font-12 text-gray">30/10/2020 </div>
-              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
-              <div class="auction-notification-post-single-description font-12 ">
+            <div class="row row-no-margin p-2 font-14">
+              <div class="font-regular text-gray pb-2">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-bold pb-2">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description">
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
@@ -400,10 +394,10 @@
         <div class="col-4 p-0 auction-news-post p-2">
           <div class="auction-news-post-single">
             <img src="~@/assets/image/auction-today-post/img3.png">
-            <div class="row row-no-margin p-2 font-10">
-              <div class="font-12 text-gray">30/10/2020 </div>
-              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
-              <div class="auction-notification-post-single-description font-12 ">
+            <div class="row row-no-margin p-2 font-14">
+              <div class="font-regular text-gray pb-2">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-bold pb-2">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description">
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
@@ -411,13 +405,13 @@
             </div>
           </div>
         </div>
-        <div class="col-4 p-0 auction-news-post p-2">
+        <div class="col-4 p-0 p-1 auction-news-post p-2">
           <div class="auction-news-post-single">
             <img src="~@/assets/image/auction-today-post/img3.png">
-            <div class="row row-no-margin p-2 font-10">
-              <div class="font-12 text-gray">30/10/2020 </div>
-              <div class="auction-notification-post-single-title font-12 font-weight-bold">Auction today post title title long long long , so long , so long ,so long </div>
-              <div class="auction-notification-post-single-description font-12 ">
+            <div class="row row-no-margin p-2 font-14">
+              <div class="font-regular text-gray pb-2">30/10/2020 </div>
+              <div class="auction-notification-post-single-title font-bold pb-2">Auction today post title title long long long , so long , so long ,so long </div>
+              <div class="auction-notification-post-single-description">
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
                 Auction today post title description description description description long long long , so long , so long ,so long
