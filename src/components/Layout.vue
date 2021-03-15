@@ -8,7 +8,7 @@
     </div>
     <div id="main-container" class="row-no-margin">
       <div id="header-container" class="row-no-margin">
-        <div class="row-no-margin col-12 d-flex align-items-center top-banner-container">
+        <div class="row-no-margin col-12 d-flex align-items-center">
           <div class="row-no-margin p-0 col-6 d-flex justify-content-start">
             <a class="active">Trang chủ</a>
             <a class="">Đấu giá</a>

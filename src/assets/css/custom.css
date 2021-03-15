@@ -74,7 +74,7 @@ html, body {
 }
 
 #header-container{
-    padding: 0 98px;
+    padding: 5px 98px;
 }
 #page-content{
     padding: 24px 98px;
@@ -88,7 +88,7 @@ html, body {
     width: 100%;
 }
 .top-banner-container{
-    /* border-bottom: 1px solid rosybrown; */
+    border-bottom: 1px solid rosybrown;
     padding: 5px;
 }
 
@@ -141,11 +141,12 @@ html, body {
     background-color: inherit;
 }
 .nar-product-h {
-    max-width: 270px;
+    width: 270px;
     background-color: #713C39;
     border-radius: 4px 0 0 4px;
 }
 .rev-slider-wrapper{
+    width: calc(100% - 270px);
     border-radius: 0 4px 4px 0;
 }
 .mainmenu, .submenu {

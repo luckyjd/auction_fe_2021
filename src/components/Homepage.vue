@@ -1,7 +1,7 @@
 <template>
   <div class="row row-no-margin p-0">
     <div class="nar-product-slide-wrapper row-no-margin col-12 p-0 d-flex justify-content-start">
-      <div class="nar-product-h p-0 col-3 position-relative">
+      <div class="nar-product-h p-0 position-relative">
         <ul class="mainmenu pt-3">
           <li class="position-relative"><a href="">Tài sản thanh lý</a>
             <ul class="submenu position-absolute">
@@ -18,7 +18,7 @@
           <p>Hotline 0976 448 446</p>
         </div>
       </div>
-      <div class="rev-slider-wrapper col-9 p-0">
+      <div class="rev-slider-wrapper p-0">
         <b-carousel
             id="carousel-1"
             v-model="slide"
@@ -26,8 +26,8 @@
             controls
             indicators
             background="#ccc"
-            img-width="900"
-            img-height="320"
+            img-width="calc(100% - 270px)"
+            img-height="auto"
             style="text-shadow: 1px 1px 2px #000;"
             @sliding-start="onSlideStart"
             @sliding-end="onSlideEnd"
