@@ -61,19 +61,19 @@
               info@daugiavietnam.vn</div>
           </div>
           <div class="footer-info ml-auto d-flex justify-content-start text-white pr-4">
-            <div class="footer-doc d-flex flex-column pr-4 pl-4">
+            <div class="footer-doc d-flex flex-column pr-4 pl-4 ">
               <div class="font-16 font-bold pb-3 ">Trợ giúp nhà thầu</div>
-              <div class="font-14 font-regular pb-1 pt-1">Đăng ký tham gia tài khoản đấu giá </div>
-              <div class="font-14 font-regular pb-1 pt-1">Hướng dẫn chi tiết về đấu thầu</div>
-              <div class="font-14 font-regular pb-1 pt-1">Quy định về đấu giá onlice</div>
+              <a class="text-white font-14 font-regular pb-1 pt-1 ">Đăng ký tham gia tài khoản đấu giá </a>
+              <a class="text-white font-14 font-regular pb-1 pt-1">Hướng dẫn chi tiết về đấu thầu</a>
+              <a class="text-white font-14 font-regular pb-1 pt-1">Quy định về đấu giá online</a>
               <div class="font-16 font-bold pb-3 pt-3">Trợ giúp thanh toán</div>
-              <div class="font-14 font-regular pb-1 pt-1">Cách đăng ký và thanh toán tiền cọc</div>
-              <div class="font-14 font-regular pb-1 pt-1">Trả lại tiền cọc của nhà thầu</div>
+              <a class="text-white font-14 font-regular pb-1 pt-1">Cách đăng ký và thanh toán tiền cọc</a>
+              <a class="text-white font-14 font-regular pb-1 pt-1">Trả lại tiền cọc của nhà thầu</a>
             </div>
             <div class=" footer-cert ml-auto d-flex flex-column pr-4 pl-4">
               <div class="font-16 font-bold pb-3 ">Đăng ký tài sản đấu giá</div>
-              <div class="font-14 font-regular pb-1 pt-1">Cách đưa tài sản lên đấu giá</div>
-              <div class="font-14 font-regular pb-1 pt-1">Quyết toán sau đấu giá</div>
+              <a class="text-white font-14 font-regular pb-1 pt-1">Cách đưa tài sản lên đấu giá</a>
+              <a class="text-white font-14 font-regular pb-1 pt-1">Quyết toán sau đấu giá</a>
               <div class="bocongthuong-icon mt-2"></div>
             </div>
 
