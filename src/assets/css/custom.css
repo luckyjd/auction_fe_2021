@@ -20,6 +20,9 @@ html, body {
 .font-20{
     font-size: 20px;
 }
+.text-white{
+    color: white;
+}
 .text-red{
     color: red;
 }
@@ -91,6 +94,11 @@ html, body {
 
 .hammer-icon{
     background: transparent url('~@/assets/svg/hammer.svg') 0 0 no-repeat padding-box;
+    height: 40px;
+    width: 40px;
+}
+.hammer-icon-fff{
+    background: transparent url('~@/assets/svg/hammer_fff.svg') 0 0 no-repeat padding-box;
     height: 40px;
     width: 40px;
 }
@@ -337,4 +345,12 @@ html, body {
 .auction-news-post-single-description{
     max-height: 64px;
     overflow: hidden;
+}
+.bocongthuong-icon{
+    background-image:    url('~@/assets/image/bocongthuong.png');
+    background-size:     contain;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    width: 170px;
+    height: 132px;
 }
