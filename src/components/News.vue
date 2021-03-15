@@ -1,140 +1,5 @@
 <template>
   <div class="row row-no-margin p-0">
-    <div class="nar-product-slide-wrapper row-no-margin col-12 p-0 d-flex justify-content-start">
-      <div class="nar-product-h p-0 position-relative">
-        <ul class="mainmenu pt-3">
-          <li class="position-relative"><a href="">Tài sản thanh lý</a>
-            <ul class="submenu position-absolute">
-              <li><a href="">Tài sản công</a></li>
-              <li><a href="">Tài sản của tổ chức khác</a></li>
-            </ul>
-          </li>
-          <li><a href="">Tài sản phát mại</a></li>
-          <li><a href="">QSD đất để NN giao đất</a></li>
-          <li><a href="">Tang vật bị tịch thu</a></li>
-          <li><a href="">Ts đặc biệt- TS khác</a></li>
-        </ul>
-        <div class="position-absolute hotline">
-          <p>Hotline 0976 448 446</p>
-        </div>
-      </div>
-      <div class="rev-slider-wrapper p-0">
-        <b-carousel
-            id="carousel-1"
-            v-model="slide"
-            :interval="3000"
-            controls
-            indicators
-            background="#ccc"
-            img-width="calc(100% - 270px)"
-            img-height="auto"
-            style="text-shadow: 1px 1px 2px #000;"
-            @sliding-start="onSlideStart"
-            @sliding-end="onSlideEnd"
-        >
-          <!-- Text slides with image -->
-          <b-carousel-slide
-              img-src="~@/assets/image/revolution-slider/bg-slide-3.jpg"
-          ></b-carousel-slide>
-
-          <b-carousel-slide
-              img-src="~@/assets/image/revolution-slider/bg-slide-2.jpg"
-          ></b-carousel-slide>
-
-          <b-carousel-slide
-              img-src="~@/assets/image/revolution-slider/bg-slide-1.jpg"
-          ></b-carousel-slide>
-
-  <!--         Slides with custom text-->
-  <!--        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">-->
-  <!--          <h1>Hello world!</h1>-->
-  <!--        </b-carousel-slide>-->
-
-          <!-- Slides with img slot -->
-          <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-  <!--        <b-carousel-slide>-->
-  <!--          <template v-slot:img>-->
-  <!--            <img-->
-  <!--                class="d-block img-fluid w-100"-->
-  <!--                width="1170"-->
-  <!--                height="320"-->
-  <!--                src="https://picsum.photos/1024/480/?image=52"-->
-  <!--                alt="image slot"-->
-  <!--            >-->
-  <!--          </template>-->
-  <!--        </b-carousel-slide>-->
-
-          <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-  <!--        <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">-->
-  <!--          <p>-->
-  <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt-->
-  <!--            a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.-->
-  <!--          </p>-->
-  <!--        </b-carousel-slide>-->
-        </b-carousel>
-      </div>
-    </div><!--    end nar-product-slide-wrapper-->
-    <div class="auction-process-wrapper col-12 p-3">
-      <div class="col-12 p-0">
-        <p class="font-bold">Quy trình đấu giá</p>
-      </div>
-      <div class="col-12 p-0 auction-process-step d-flex justify-content-center">
-        <div class="step-cover col-2 p-0 pr-3">
-          <div class="step-1 p-2">
-            <div class="step-icon d-flex justify-content-start align-items-center">
-              <i class="fa fa-file-text" aria-hidden="true"></i>
-              <div class="pl-2 font-regular">Bước 1 </div>
-            </div>
-            <div class="p-1 font-medium">Thông báo đấu giá</div>
-          </div>
-        </div>
-        <div class="step-cover col-2 p-0 pr-3">
-          <div class="step-2 p-2">
-            <div class="step-icon d-flex justify-content-start align-items-center">
-              <i class="fa fa-eye" aria-hidden="true"></i>
-              <div class="pl-2 font-regular">Bước 2 </div>
-            </div>
-            <div class="p-1 font-medium">Xem sản phẩm đấu giá</div>
-          </div>
-        </div>
-        <div class="step-cover col-2 p-0 pr-3">
-          <div class="step-3 p-2">
-            <div class="step-icon d-flex justify-content-start align-items-center">
-              <i class="fa fa-credit-card-alt " aria-hidden="true"></i>
-              <div class="pl-2 font-regular">Bước 3 </div>
-            </div>
-            <div class="p-1 font-medium">Đặt cọc tiền đấu giá</div>
-          </div>
-        </div>
-        <div class="step-cover col-2 p-0 pr-3">
-          <div class="step-4 p-2">
-            <div class="step-icon d-flex justify-content-start align-items-center">
-              <i class="fa fa-gavel" aria-hidden="true"></i>
-              <div class="pl-2 font-regular">Bước 4 </div>
-            </div>
-            <div class="p-1 font-medium">Tham gia đấu giá</div>
-          </div>
-        </div>
-        <div class="step-cover col-2 p-0 pr-3">
-          <div class="step-5 p-2">
-            <div class="step-icon d-flex justify-content-start align-items-center">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              <div class="pl-2 font-regular">Bước 5 </div>
-            </div>
-            <div class="p-1 font-medium">Đấu giá thành công</div>
-          </div>
-        </div>
-        <div class="step-cover col-2 p-0">
-          <div class="step-6 p-2">
-            <div class="step-icon d-flex justify-content-start align-items-center">
-              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-              <div class="pl-2 font-regular">Bước 6 </div>
-            </div>
-            <div class="p-1 font-medium">Quyết toán </div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- end auction-process-wrapper-->
     <div class="auction-info-wrapper col-12 p-0 d-flex justify-content-center">
       <div class="col-9 p-0 pr-4">
         <div class="row row-no-margin auction-today p-3">
@@ -580,26 +445,16 @@
 
 
 export default {
-  name: "homepage",
+  name: "news",
   metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
       title: 'Auction Online',
       // all titles will be injected into this template
-      titleTemplate: '%s | Home'
+      titleTemplate: '%s | News'
     },
   data() {
-    return {
-      slide: 0,
-      sliding: null
-    };
   },
   methods: {
-    onSlideStart() {
-      this.sliding = true
-    },
-    onSlideEnd() {
-      this.sliding = false
-    }
   },
   mounted() {
       // add external script hereeee

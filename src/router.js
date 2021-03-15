@@ -18,9 +18,9 @@ export default new Router({
           component: () => import("./components/Homepage")
         },
         {
-          path: "/tutorials/:id",
-          name: "tutorial-details",
-          component: () => import("./components/Tutorial")
+          path: "/news",
+          name: "news",
+          component: () => import("./components/News")
         },
         {
           path: "/add",

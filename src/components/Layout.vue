@@ -12,7 +12,7 @@
           <div class="row-no-margin p-0 col-6 d-flex justify-content-start">
             <a class="active">Trang chủ</a>
             <a class="">Đấu giá</a>
-            <a class="">Tin tức</a>
+            <a href="/news">Tin tức</a>
             <a class="">Giới thiệu</a>
             <a class="">Tuyển dụng</a>
             <a class="">Liên hệ</a>

@@ -7,13 +7,7 @@
 
 <script>
 export default {
-  name: 'app',
-  metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      title: 'Auction Online',
-      // all titles will be injected into this template
-      titleTemplate: '%s | %s Webapp'
-    }
+  name: 'app'
 }
 </script>
 <style>
