@@ -49,7 +49,7 @@
               Số 4-A13 Đầm Trấu, phường Bạch Đằng, quận Hai Bà Trưng, Tp Hà Nội
             </div>
             <div class="font-14 font-regular p-2">
-              <i class="fa fa-phone p-1" aria-hidden="true"></i>
+              <i class="fa fa-phone font-16 p-1" aria-hidden="true"></i>
               024 3984 2728
               </div>
             <div class="font-14 font-regular p-2">
