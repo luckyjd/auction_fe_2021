@@ -1,5 +1,5 @@
 <template>
-  <div class="row row-no-margin p-0">
+  <div class="row row-no-margin p-0 template-content-container">
     <div class="auction-news-search row row-no-margin">
       <div class="row row-no-margin auction-news-search-line">
         <div class="row-no-margin p-0 d-flex justify-content-end align-items-center user-info">
