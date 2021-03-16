@@ -51,214 +51,214 @@ html, body {
     font-weight: 800;
 }
 .p-2p{
-    padding: 2px;
+    padding: 2px !important;
 }
 .p-4p{
-    padding: 4px;
+    padding: 4px !important;
 }
 .p-8p{
-    padding: 8px;
+    padding: 8px !important;
 }
 .p-12p{
-    padding: 12px;
+    padding: 12px !important;
 }
 .p-16p{
-    padding: 16px;
+    padding: 16px !important;
 }
 .p-20p{
-    padding: 20px;
+    padding: 20px !important;
 }
 .p-24p{
-    padding: 24px;
+    padding: 24px !important;
 }
 .pl-2p{
-    padding-left: 2px;
+    padding-left: 2px !important;
 }
 .pl-4p{
-    padding-left: 4px;
+    padding-left: 4px !important;
 }
 .pl-8p{
-    padding-left: 8px;
+    padding-left: 8px !important;
 }
 .pl-12p{
-    padding-left: 12px;
+    padding-left: 12px !important;
 }
 .pl-16p{
-    padding-left: 16px;
+    padding-left: 16px !important;
 }
 .pl-20p{
-    padding-left: 20px;
+    padding-left: 20px !important;
 }
 .pl-24p{
-    padding-left: 24px;
+    padding-left: 24px !important;
 }
 .pr-2p{
-    padding-right: 2px;
+    padding-right: 2px !important;
 }
 .pr-4p{
-    padding-right: 4px;
+    padding-right: 4px !important;
 }
 .pr-8p{
-    padding-right: 8px;
+    padding-right: 8px !important;
 }
 .pr-12p{
-    padding-right: 12px;
+    padding-right: 12px !important;
 }
 .pr-16p{
-    padding-right: 16px;
+    padding-right: 16px !important;
 }
 .pr-20p{
-    padding-right: 20px;
+    padding-right: 20px !important;
 }
 .pr-24p{
-    padding-right: 24px;
+    padding-right: 24px !important;
 }
 .pt-2p{
-    padding-top: 2px;
+    padding-top: 2px !important;
 }
 .pt-4p{
-    padding-top: 4px;
+    padding-top: 4px !important;
 }
 .pt-8p{
-    padding-top: 8px;
+    padding-top: 8px !important;
 }
 .pt-12p{
-    padding-top: 12px;
+    padding-top: 12px !important;
 }
 .pt-16p{
-    padding-top: 16px;
+    padding-top: 16px !important;
 }
 .pt-20p{
-    padding-top: 20px;
+    padding-top: 20px !important;
 }
 .pt-24p{
-    padding-top: 24px;
+    padding-top: 24px !important;
 }
 .pb-2p{
-    padding-bottom: 2px;
+    padding-bottom: 2px !important;
 }
 .pb-4p{
-    padding-bottom: 4px;
+    padding-bottom: 4px !important;
 }
 .pb-8p{
-    padding-bottom: 8px;
+    padding-bottom: 8px !important;
 }
 .pb-12p{
-    padding-bottom: 12px;
+    padding-bottom: 12px !important;
 }
 .pb-16p{
-    padding-bottom: 16px;
+    padding-bottom: 16px !important;
 }
 .pb-20p{
-    padding-bottom: 20px;
+    padding-bottom: 20px !important;
 }
 .pb-24p{
-    padding-bottom: 24px;
+    padding-bottom: 24px !important;
 }
 .m-2p{
-    margin: 2px;
+    margin: 2px !important;
 }
 .m-4p{
-    margin: 4px;
+    margin: 4px !important;
 }
 .m-8p{
-    margin: 8px;
+    margin: 8px !important;
 }
 .m-12p{
-    margin: 12px;
+    margin: 12px !important;
 }
 .m-16p{
-    margin: 16px;
+    margin: 16px !important;
 }
 .m-20p{
-    margin: 20px;
+    margin: 20px !important;
 }
 .m-24p{
-    margin: 24px;
+    margin: 24px !important;
 }
 .ml-2p{
-    margin-left: 2px;
+    margin-left: 2px !important;
 }
 .ml-4p{
-    margin-left: 4px;
+    margin-left: 4px !important;
 }
 .ml-8p{
-    margin-left: 8px;
+    margin-left: 8px !important;
 }
 .ml-12p{
-    margin-left: 12px;
+    margin-left: 12px !important;
 }
 .ml-16p{
-    margin-left: 16px;
+    margin-left: 16px !important;
 }
 .ml-20p{
-    margin-left: 20px;
+    margin-left: 20px !important;
 }
 .ml-24p{
-    margin-left: 24px;
+    margin-left: 24px !important;
 }
 .mr-2p{
-    margin-right: 2px;
+    margin-right: 2px !important;
 }
 .mr-4p{
-    margin-right: 4px;
+    margin-right: 4px !important;
 }
 .mr-8p{
-    margin-right: 8px;
+    margin-right: 8px !important;
 }
 .mr-12p{
-    margin-right: 12px;
+    margin-right: 12px !important;
 }
 .mr-16p{
-    margin-right: 16px;
+    margin-right: 16px !important;
 }
 .mr-20p{
-    margin-right: 20px;
+    margin-right: 20px !important;
 }
 .mr-24p{
-    margin-right: 24px;
+    margin-right: 24px !important;
 }
 .mt-2p{
-    margin-top: 2px;
+    margin-top: 2px !important;
 }
 .mt-4p{
-    margin-top: 4px;
+    margin-top: 4px !important;
 }
 .mt-8p{
-    margin-top: 8px;
+    margin-top: 8px !important;
 }
 .mt-12p{
-    margin-top: 12px;
+    margin-top: 12px !important;
 }
 .mt-16p{
-    margin-top: 16px;
+    margin-top: 16px !important;
 }
 .mt-20p{
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 .mt-24p{
-    margin-top: 24px;
+    margin-top: 24px !important;
 }
 .mb-2p{
-    margin-bottom: 2px;
+    margin-bottom: 2px !important;
 }
 .mb-4p{
-    margin-bottom: 4px;
+    margin-bottom: 4px !important;
 }
 .mb-8p{
-    margin-bottom: 8px;
+    margin-bottom: 8px !important;
 }
 .mb-12p{
-    margin-bottom: 12px;
+    margin-bottom: 12px !important;
 }
 .mb-16p{
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
 }
 .mb-20p{
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 .mb-24p{
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
 }
 .template-content-container{
     max-width: 1170px;

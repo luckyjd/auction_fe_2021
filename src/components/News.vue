@@ -5,7 +5,7 @@
         <div class="row-no-margin p-0 d-flex justify-content-end align-items-center user-info">
               <!-- <div class="col-8 p-0 d-flex justify-content-start search-group pl-1 pr-1"> -->
             <div class="row-no-margin search-group d-flex justify-content-start">
-              <div class="m-1 pl-1 pr-1">
+              <div class="m-1 pl-4p pr-4p">
                 <div class="search-icon"></div>
               </div>
               <input class="border-0 w-100" type="text" placeholder="Nhập tiêu đề" id="usr" name="username" >
@@ -13,18 +13,18 @@
         </div>
       </div>
     </div>
-    <div class="auction-news-wrapper col-12 p-3">
+    <div class="auction-news-wrapper col-12 p-16p">
       <div class="row row-no-margin auction-news">
-        <div class="col-12 font-bold font-20 p-3">Thông báo bán đấu giá</div>
+        <div class="col-12 font-bold font-20 p-16p">Thông báo bán đấu giá</div>
         <div class="col-12 p-0">
           <div class="row row-no-margin">
-            <div class="col-4 p-0 auction-news-post p-3">
+            <div class="col-4 p-0 auction-news-post p-16p">
               <div class="auction-news-post-single">
                 <img src="~@/assets/image/auction-today-post/img2.png">
-                <div class="row row-no-margin font-14 pt-1 pb-1">
-                  <div class="font-regular text-gray pt-1 pb-1">30/10/2020 </div>
-                  <div class="auction-news-post-single-title font-bold pt-1 pb-1">Auction today post title title long long long , so long , so long ,so long </div>
-                  <div class="auction-news-post-single-description pt-1 pb-1">
+                <div class="row row-no-margin font-14 pt-4p pb-4p">
+                  <div class="font-regular text-gray pt-4p pb-4p">30/10/2020 </div>
+                  <div class="auction-news-post-single-title font-bold pt-4p pb-4p">Auction today post title title long long long , so long , so long ,so long </div>
+                  <div class="auction-news-post-single-description pt-4p pb-4p">
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
@@ -32,13 +32,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 p-0 auction-news-post p-3">
+            <div class="col-4 p-0 auction-news-post p-16p">
               <div class="auction-news-post-single">
                 <img src="~@/assets/image/auction-today-post/img2.png">
-                <div class="row row-no-margin font-14 pt-1 pb-1">
-                  <div class="font-regular text-gray pt-1 pb-1">30/10/2020 </div>
-                  <div class="auction-news-post-single-title font-bold pt-1 pb-1">Auction today post title title long long long , so long , so long ,so long </div>
-                  <div class="auction-news-post-single-description pt-1 pb-1">
+                <div class="row row-no-margin font-14 pt-4p pb-4p">
+                  <div class="font-regular text-gray pt-4p pb-4p">30/10/2020 </div>
+                  <div class="auction-news-post-single-title font-bold pt-4p pb-4p">Auction today post title title long long long , so long , so long ,so long </div>
+                  <div class="auction-news-post-single-description pt-4p pb-4p">
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
@@ -46,13 +46,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 p-0 auction-news-post p-3">
+            <div class="col-4 p-0 auction-news-post p-16p">
               <div class="auction-news-post-single">
                 <img src="~@/assets/image/auction-today-post/img2.png">
-                <div class="row row-no-margin font-14 pt-1 pb-1">
-                  <div class="font-regular text-gray pt-1 pb-1">30/10/2020 </div>
-                  <div class="auction-news-post-single-title font-bold pt-1 pb-1">Auction today post title title long long long , so long , so long ,so long </div>
-                  <div class="auction-news-post-single-description pt-1 pb-1">
+                <div class="row row-no-margin font-14 pt-4p pb-4p">
+                  <div class="font-regular text-gray pt-4p pb-4p">30/10/2020 </div>
+                  <div class="auction-news-post-single-title font-bold pt-4p pb-4p">Auction today post title title long long long , so long , so long ,so long </div>
+                  <div class="auction-news-post-single-description pt-4p pb-4p">
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
@@ -60,13 +60,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 p-0 auction-news-post p-3">
+            <div class="col-4 p-0 auction-news-post p-16p">
               <div class="auction-news-post-single">
                 <img src="~@/assets/image/auction-today-post/img2.png">
-                <div class="row row-no-margin font-14 pt-1 pb-1">
-                  <div class="font-regular text-gray pt-1 pb-1">30/10/2020 </div>
-                  <div class="auction-news-post-single-title font-bold pt-1 pb-1">Auction today post title title long long long , so long , so long ,so long </div>
-                  <div class="auction-news-post-single-description pt-1 pb-1">
+                <div class="row row-no-margin font-14 pt-4p pb-4p">
+                  <div class="font-regular text-gray pt-4p pb-4p">30/10/2020 </div>
+                  <div class="auction-news-post-single-title font-bold pt-4p pb-4p">Auction today post title title long long long , so long , so long ,so long </div>
+                  <div class="auction-news-post-single-description pt-4p pb-4p">
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
@@ -74,13 +74,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 p-0 auction-news-post p-3">
+            <div class="col-4 p-0 auction-news-post p-16p">
               <div class="auction-news-post-single">
                 <img src="~@/assets/image/auction-today-post/img2.png">
-                <div class="row row-no-margin font-14 pt-1 pb-1">
-                  <div class="font-regular text-gray pt-1 pb-1">30/10/2020 </div>
-                  <div class="auction-news-post-single-title font-bold pt-1 pb-1">Auction today post title title long long long , so long , so long ,so long </div>
-                  <div class="auction-news-post-single-description pt-1 pb-1">
+                <div class="row row-no-margin font-14 pt-4p pb-4p">
+                  <div class="font-regular text-gray pt-4p pb-4p">30/10/2020 </div>
+                  <div class="auction-news-post-single-title font-bold pt-4p pb-4p">Auction today post title title long long long , so long , so long ,so long </div>
+                  <div class="auction-news-post-single-description pt-4p pb-4p">
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
@@ -88,13 +88,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 p-0 auction-news-post p-3">
+            <div class="col-4 p-0 auction-news-post p-16p">
               <div class="auction-news-post-single">
                 <img src="~@/assets/image/auction-today-post/img2.png">
-                <div class="row row-no-margin font-14 pt-1 pb-1">
-                  <div class="font-regular text-gray pt-1 pb-1">30/10/2020 </div>
-                  <div class="auction-news-post-single-title font-bold pt-1 pb-1">Auction today post title title long long long , so long , so long ,so long </div>
-                  <div class="auction-news-post-single-description pt-1 pb-1">
+                <div class="row row-no-margin font-14 pt-4p pb-4p">
+                  <div class="font-regular text-gray pt-4p pb-4p">30/10/2020 </div>
+                  <div class="auction-news-post-single-title font-bold pt-4p pb-4p">Auction today post title title long long long , so long , so long ,so long </div>
+                  <div class="auction-news-post-single-description pt-4p pb-4p">
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
                     Auction today post title description description description description long long long , so long , so long ,so long
