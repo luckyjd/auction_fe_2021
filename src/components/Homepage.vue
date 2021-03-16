@@ -1,5 +1,5 @@
 <template>
-  <div class="row row-no-margin p-0">
+  <div class="row row-no-margin p-0 template-content-container">
     <div class="nar-product-slide-wrapper row-no-margin col-12 p-0 d-flex justify-content-start">
       <div class="nar-product-h p-0 position-relative">
         <ul class="mainmenu pt-3">

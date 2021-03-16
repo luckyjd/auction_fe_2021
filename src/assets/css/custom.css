@@ -50,7 +50,9 @@ html, body {
 .font-extra-bold{
     font-weight: 800;
 }
-
+.template-content-container{
+    max-width: 1170px;
+}
 
 /*custom input-placeholder*/
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -326,8 +328,6 @@ html, body {
 .auction-news-wrapper{
     background-color: #ffffff;
     margin-bottom: 16px;
-    height: 100%;
-    width: 100%;
 }
 
 .auction-news-post img{
@@ -354,4 +354,14 @@ html, body {
     background-position: center center; 
     width: 170px;
     height: 132px;
+}
+.auction-news-search{
+    width: 100vw;
+    height: auto;
+    background-color: #ffffff;
+    margin: -24px -98px 0 -98px;
+    border-top: 1px solid #ece8e8;
+}
+.auction-news-search-line{
+    padding: 24px 98px;
 }

@@ -7,10 +7,10 @@
       </div>
     </div>
     <div id="main-container" class="row-no-margin">
-      <div id="header-container" class="row-no-margin">
-        <div class="row-no-margin col-12 d-flex align-items-center">
-          <div class="row-no-margin p-0 col-6 d-flex justify-content-start">
-            <a class="active">Trang chủ</a>
+      <div id="header-container" class="row-no-margin row d-flex justify-content-center ">
+        <div class="row-no-margin col-12 d-flex align-items-center template-content-container">
+          <div class="row-no-margin p-0 col-6 d-flex justify-content-start ">
+            <a href="/home">Trang chủ</a>
             <a class="">Đấu giá</a>
             <a href="/news">Tin tức</a>
             <a class="">Giới thiệu</a>
@@ -32,11 +32,11 @@
           </div>
         </div>
       </div>
-      <div id="page-content">
+      <div id="page-content" class="d-flex justify-content-center">
         <router-view />
-
       </div>
-      <div id="footer-container" class="position-relative row-no-margin">
+      <div id="footer-container" class="position-relative row-no-margin row d-flex justify-content-center">
+        
         <div class="footer-wrapper d-flex justify-content-start">
           <div class="footer-address d-flex flex-column text-white ">
             <div class="d-flex justify-content-start align-items-center">
@@ -79,6 +79,7 @@
 
           </div>
         </div>
+        
         <div class="position-absolute license">
           <div class="p-3">Quyết định số 112/QĐ-STP của Sở Tư Pháp thành phố Hà Nội phê duyệt tổ chức đấu giá tài sản đủ điều kiện thực hiện hình thức đấu giá trực tuyến ngày 12/05/2020</div>
         </div>
