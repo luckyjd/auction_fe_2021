@@ -275,7 +275,7 @@
       </div>
       <div class="auction-notification col-3 p-8p">
         <div class="row row-no-margin">
-          <div class="col-12 p-20p font-bold font-16 text-center">Thông báo đấu giá</div>
+          <div class="col-12 pt-8p pl-16p pr-16p pb-16p font-bold font-16 text-center">Thông báo đấu giá</div>
           <!-- <div class="font-12 col-12" style="color: #000000;"></div> -->
           <div class="col-12 p-0 auction-notification-post pb-8p">
             <div class="auction-notification-post-single">
@@ -449,7 +449,7 @@
       </div>
       <div class="auction-notification col-3 p-8p">
         <div class="row row-no-margin">
-          <div class="col-12 p-20p font-bold font-16 text-center">Tin đấu giá mới nhất</div>
+          <div class="col-12 pt-8p pl-16p pr-16p pb-16p font-bold font-16 text-center">Tin đấu giá mới nhất</div>
           <!-- <div class="font-12 col-12" style="color: #000000;"></div> -->
           <div class="col-12 p-0 auction-notification-post pb-8p">
             <div class="auction-notification-post-single">
