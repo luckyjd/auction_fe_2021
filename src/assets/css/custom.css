@@ -2,6 +2,21 @@ html, body {
     font-family: Maven Pro, Helvetica, sans-serif;
     font-size: 14px;
 }
+/* .nav-link[data-toggle].collapsed:after {
+    content: " ▾";
+}
+.nav-link[data-toggle]:not(.collapsed):after {
+    content: " ▴";
+} */
+.color-theme{
+    color: #713C39;
+}
+.color-theme-admin{
+    color: #E84A4A;
+}
+.bg-color-theme-admin{
+    background-color: #E84A4A;
+}
 .font-8{
     font-size: 8px;
 }
@@ -19,6 +34,9 @@ html, body {
 }
 .font-20{
     font-size: 20px;
+}
+.font-24{
+    font-size: 24px;
 }
 .text-white{
     color: white;
@@ -565,7 +583,7 @@ html, body {
     width: 170px;
     height: 132px;
 }
-.auction-news-search{
+.auction-news-search, .auction-product-search{
     width: 100vw;
     height: auto;
     background-color: #ffffff;
@@ -574,4 +592,95 @@ html, body {
 }
 .auction-news-search-line{
     padding: 24px 98px;
+}
+.admin-container-nav .nav .nav-link{
+    padding:  12px 24px;
+    color: #000000;
+}
+.admin-container-nav .nav .nav-link span{
+    font-weight: 500;
+}
+.admin-container-nav .nav .nav-link:hover{
+    padding:  12px 24px;
+    color: #E84A4A;
+}
+#sidebar{
+    border-right: 1px solid #dad9d9;
+}
+.admin-nav-top{
+    border-bottom: 1px solid #dad9d9;
+}
+.admin-search-product-group .admin-search-input{
+    width: auto;
+    border: 1px solid #dad9d9;
+    border-radius: 4px;
+}
+.admin-search-product-group .admin-search-input input{
+    width: 250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: inherit;
+}
+.admin-search-product-group select{
+    width: auto;
+    min-width: 120px;
+    max-width: 160px;
+    border: 1px solid #dad9d9;
+    border-radius: 4px;
+}
+.admin-search-product-group .admin-search-input-time{
+    width: auto;
+    border: 1px solid #dad9d9;
+    border-radius: 4px;
+}
+.admin-search-product-group .admin-search-input-time input{
+    width: 160px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: inherit;
+}
+.admin-search-product-filter button{
+    border: 1px solid #dad9d9;
+    border-radius: 4px;
+}
+.admin-search-product-list{
+    overflow-y:auto; 
+    height: calc(100vh - 180.5px);
+}
+.table.b-table > thead > tr > .table-b-table-default{
+    color: #ffffff;
+    background-color: #E84A4A;
+}
+.admin-product-create-step .p-title{
+    width: 200px;
+}
+.admin-product-create-step div input{
+    border: 1px solid #dad9d9;
+    border-radius: 4px;
+}
+.input-time-picker div input{
+    width: auto;
+    min-width: none;
+}
+.input-date-picker{
+    width: auto;
+}
+.border-000000{
+    border: 1px solid #000000;
+}
+.w-470p{
+    width: 470px;
+}
+.m-w-140p{
+    width: auto;
+    min-width: 140px;
+}
+.upload-multi-preview .image-container {
+    width: 670px !important;
+}
+.admin-search-product-list table td{ 
+    vertical-align: middle;
+    padding: 4px;
 }

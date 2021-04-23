@@ -9,23 +9,45 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: () => import("./components/Layout"),
+      component: () => import("./components/portal/Layout"),
       children : [
         {
           path: "/",
           alias : "/home",
           name: "homepage",
-          component: () => import("./components/Homepage")
+          component: () => import("./components/portal/Homepage")
         },
         {
           path: "/news",
           name: "news",
-          component: () => import("./components/News")
+          component: () => import("./components/portal/News")
         },
         {
-          path: "/add",
-          name: "add",
-          component: () => import("./components/AddTutorial")
+          path: "/products",
+          name: "products",
+          component: () => import("./components/portal/ProductList")
+        }
+      ]
+    },
+    {
+      path: "/admin",
+      name: "admin",
+      component: () => import("./components/admin/AdminLayout"),
+      children : [
+        {
+          path: "/admin",
+          name: "adminpage",
+          component: () => import("./components/admin/AdminProductList")
+        },
+        {
+          path: "/admin/products",
+          name: "adminProductList",
+          component: () => import("./components/admin/AdminProductList")
+        },
+        {
+          path: "/admin/products/create",
+          name: "adminProductCreate",
+          component: () => import("./components/admin/AdminProductCreate")
         }
       ]
     }

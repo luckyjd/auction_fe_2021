@@ -11,7 +11,7 @@
         <div class="row-no-margin col-12 d-flex align-items-center template-content-container">
           <div class="row-no-margin p-0 col-6 d-flex justify-content-start ">
             <a href="/home">Trang chủ</a>
-            <a class="">Đấu giá</a>
+            <a href="/products">Đấu giá</a>
             <a href="/news">Tin tức</a>
             <a class="">Giới thiệu</a>
             <a class="">Tuyển dụng</a>

@@ -153,7 +153,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img3.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá hiện tại:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -173,7 +173,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img2.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá hiện tại:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -193,7 +193,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá hiện tại:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -213,7 +213,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá hiện tại:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -233,7 +233,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img3.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá hiện tại:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -253,7 +253,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img3.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá hiện tại:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -327,7 +327,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img3.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá khởi điểm:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -347,7 +347,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img2.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá khởi điểm:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -367,7 +367,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá khởi điểm:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -387,7 +387,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá khởi điểm:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -407,7 +407,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img3.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá khởi điểm:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>
@@ -427,7 +427,7 @@
                 <div class="auction-today-post-single">
                   <img src="~@/assets/image/auction-today-post/img3.png">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-medium">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá khởi điểm:</div>
                       <div class="text-red font-bold">120.000.000 đ</div>

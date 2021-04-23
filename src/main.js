@@ -10,6 +10,10 @@ global.$ = jQuery
 import VueMeta from 'vue-meta'
 Vue.use(VueMeta)
 
+// import datePicker from 'vue-bootstrap-datetimepicker';
+// import 'bootstrap/dist/css/bootstrap.css';
+// Vue.use(datePicker);
+
 
 Vue.config.productionTip = false
 // Install BootstrapVue
