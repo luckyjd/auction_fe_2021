@@ -323,14 +323,28 @@ html, body {
 }
 
 .hammer-icon{
-    background: transparent url('~@/assets/svg/hammer.svg') 0 0 no-repeat padding-box;
+    background: transparent url('~@/assets/svg/hammer.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     height: 40px;
     width: 40px;
 }
 .hammer-icon-fff{
-    background: transparent url('~@/assets/svg/hammer_fff.svg') 0 0 no-repeat padding-box;
+    background: transparent url('~@/assets/svg/hammer_fff.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     height: 40px;
     width: 40px;
+}
+.hammer-icon-m{
+    background: transparent url('~@/assets/svg/hammer.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 24px;
+    width: 24px;
 }
 .banner-text{
     letter-spacing: 0;
@@ -515,7 +529,7 @@ html, body {
 .auction-today-post .auction-today-post-single{
     border: 1px solid #B7B7B7;
 }
-.auction-today-post img{
+.auction-today-post img, .product-detail-image-wrapper img{
     height: auto;
     min-height: 160px;
     width: 100%;
@@ -683,4 +697,19 @@ html, body {
 .admin-search-product-list table td{ 
     vertical-align: middle;
     padding: 4px;
+}
+.product-detail-add-user-wrapper{
+    height: 100%;
+    width: 300px;
+    background-color: aqua;
+}
+
+.product-detail-wrapper{
+    height: 100%;
+    max-height: 90vh;
+    overflow: scroll;
+}
+.product_detail_data_wrapper { 
+    max-height: calc(100% - 158px);
+    overflow-y: scroll;
 }

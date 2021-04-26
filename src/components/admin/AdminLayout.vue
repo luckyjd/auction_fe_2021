@@ -35,22 +35,6 @@
           <div class="col p-0">
             <router-view />
           </div>
-          <div class="modal fade in" id="modal-view-data" style="display: none; ">
-            <div class="modal-dialog " style="width: auto; max-width: 1100px">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h6 class="modal-title text-bold">Login/Regis</h6> 
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span></button>
-                    </div>
-                    <div class="modal-body">
-                        
-                    </div>
-                </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-        </div>
       </div>
   </div>
 

@@ -1,184 +1,64 @@
 <template>
-  <div class="row row-no-margin p-0">
-    <div class="row row-no-margin">
-      <div class="col-12 pt-12p pb-12p pl-24p pr-16p d-flex justify-content-between align-items-center admin-nav-top">
-        <div class="font-14 font-medium">Quản lý đấu giá</div>
-        <i class="fa fa-user-circle-o" aria-hidden="true" style="color: #B7B7B7;font-size: 32px;"></i>
+  <div class="row row-no-margin h-100 d-flex justify-content-start">
+    <div class="product-detail-wrapper flex-grow-1 ">
+      <div class="row row-no-margin p-24p">
+        <div class="row row-no-margin " style="border-bottom: 1px solid rgb(200, 195, 195);">
+          <div class="row row-no-margin d-flex justify-content-start align-items-baseline">
+            <div class="hammer-icon-m"></div>
+            <div class="ml-8p mr-24p">Sắp diễn ra</div>
+            <div class="font-12 ml-24p mr-8p" style="color: #565656;">Thời gian</div>
+            <div class="font-14"> {{data.auction_start_end_time.start}} - {{data.auction_start_end_time.end}}</div>
+          </div>
+          <div class="row row-no-margin pt-8p pb-12p font-20 font-bold" style="color: #333333;">
+            {{data.product_title}}
+          </div>
+          <div class="row row-no-margin font-12 align-items-baseline" style="color:#565656;">
+            Mã đấu giá <span class="font-14 ml-8p" style="color:#000000;">{{data.product_code}}</span>
+          </div>
+          <div class="row row-no-margin font-12 align-items-baseline pt-12p pb-24p" style="color:#565656;">
+            Giá khởi điểm <span class="font-14 ml-8p mr-8p" style="color:#E84A4A;">{{numberWithCommas(data.product_begin_prize)}} đ</span>
+            - Bước giá <span class="font-14 ml-8p" style="color:#E84A4A;">{{numberWithCommas(data.product_step_prize)}} đ </span>
+          </div>
+        </div>
+        <div class="row row-no-margin product-detail-image-wrapper pt-24p pb-24p" style="border-bottom: 1px solid rgb(200, 195, 195);">
+          <div class="col-12 font-16 font-medium p-0">Hình ảnh</div>
+          <div class="col-3 p-8p">
+            <img src="~@/assets/image/auction-detail-post/im1.jpg">
+          </div>
+          <div class="col-3 p-8p">
+            <img src="~@/assets/image/auction-detail-post/im2.jpg">
+          </div>
+          <div class="col-3 p-8p">
+            <img src="~@/assets/image/auction-detail-post/im3.jpg">
+          </div>
+          <div class="col-3 p-8p">
+            <img src="~@/assets/image/auction-detail-post/im4.jpg">
+          </div>
+        </div>
+        <div class="row row-no-margin product_detail_data_wrapper pt-24p pb-24p" v-html="data.product_detail_data"></div>
       </div>
     </div>
-    <div class="row row-no-margin admin-search-product-group">
-      <div class="col-12 p-24p pr-20p d-flex justify-content-start align-items-center">
-        <div class="row row-no-margin d-flex justify-content-start admin-search-input">
-            <div class="m-4p pl-4p pr-4p">
-              <div class="search-icon"></div>
-            </div>
-            <input class="border-0" type="text" placeholder="Tìm đấu giá " id="usr" name="username" >
-        </div>
-        <div class="ml-16p">
-          <date-picker v-model="date_range" type="date" range 
-            placeholder="Chọn thời gian " 
-            value-type="format" format="DD/MM/YYYY"
-            style="max-width:225px;"></date-picker>
-        </div>
-        <select class="form-control ml-16p" id="sel1">
-          <option value="" selected disabled>Loại tài sản</option>
-          <option>Bất động sản</option>
-          <option>Oto</option>
-          <option>Máy bay</option>
-        </select>
-        <select class="form-control ml-16p" id="sel1">
-          <option value="" selected disabled>Địa điểm</option>
-          <option>Hà Nội</option>
-          <option>Tp HCM</option>
-          <option>Đà Nẵng</option>
-        </select>
-        <select class="form-control ml-16p" id="sel1">
-          <option value="" selected disabled>Trạng thái</option>
-          <option>Đã kết thúc</option>
-          <option>Đang diễn ra</option>
-          <option>Bản nháp</option>
-        </select>
-        <button type="button" class="btn btn-danger ml-auto bg-color-theme-admin">Tìm kiếm</button>
+    <div class="product-detail-add-user-wrapper">
+      <div class="row row-no-margin p-24p">
+
       </div>
     </div>
-    <div class="row row-no-margin admin-search-product-filter">
-      <div class="col-12 pl-24p pr-20p pb-8p d-flex justify-content-end align-items-center">
-        <div class="mr-auto"> 1-{{products.length}} / {{ products.length}} đấu giá 
-          <span class="fa fa-angle-left pl-20p" aria-hidden="true"></span> 
-          <span class="fa fa-angle-right pl-20p" aria-hidden="true"></span>
-        </div>
-        <!-- <button type="button" >Tạo đấu giá</button> -->
-        <router-link to="/admin/products/create" tag="button" class="btn btn-danger ml-16p bg-color-theme-admin">Tạo đấu giá</router-link>
-        <button type="button" class="btn btn-default ml-20p">
-          <span class="fa fa-download" aria-hidden="true"></span> Export
-        </button>
-        <button type="button" class="btn btn-default ml-20p">
-          <span class="fa fa-filter" aria-hidden="true"></span> Chọn cột
-        </button>
-      </div>
-    </div>
-    <div class="row row-no-margin admin-search-product-list">
-      <b-table 
-        responsive 
-        hover 
-        :items="products" 
-        :fields="fields"
-        :sticky-header="stickyHeader"
-      >
-        <template #cell(auction_start_end_time)="data">
-          {{ data.value.start}} <br> {{ data.value.end}}
-        </template>
-      </b-table>
-    </div>
-    
   </div>
 </template>
+
 <script>
-
-import DatePicker from "vue2-datepicker";
-import 'vue2-datepicker/index.css';
-
-import ProductDataService from "../../services/ProductDataService";
 export default {
-  name: "AdminAuctionManagement",
-  metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      title: 'Admin Auction Online',
-      // all titles will be injected into this template
-      titleTemplate: '%s | Auction Management'
-    },
-  data() {
-    return {
-      products : [],
-      date_range : '',
-      stickyHeader: 'calc(100vh - 180.5px)', 
-      fields: [
-            {
-              key: 'id',
-              label: 'Mã đấu giá',
-              sortable: true
-            },
-            {
-              key: 'auction_start_end_time',
-              label: 'Bắt đầu - kết thúc',
-            },
-            {
-              key: 'product_title',
-              label: 'Tiêu đề',
-              sortable: true,
-            },
-            {
-              key: 'product_begin_prize',
-              label: 'Giá khởi điểm',
-              sortable: true,
-            },
-            {
-              key: 'current_prize',
-              label: 'Gía hiện tại',
-              sortable: true,
-            },
-            {
-              key: 'product_auction_status',
-              label: 'Trạng thái',
-              sortable: true,
-            }
-          ],
-    }
+  name: "HelloWorld",
+  props: {
+    data: Object
   },
   methods: {
-    retrieveProducrts() {
-      ProductDataService.getAll()
-        .then(response => {
-          this.products = response.data;
-          this.products.forEach(this.convertProducts);
-          console.log(response.data);
-        })
-        .catch(e => {
-          console.log(e);
-        });
-    },
-    convertProducts(item, index, data) {
-      // convert auction_start_end_time 
-        let tmp_start_time = new Date(item.auction_start_time);
-        let tmp_end_time = new Date(item.auction_end_time);
-        data[index]['auction_start_end_time'] = { 'start' : (this.checkTime(tmp_start_time.getHours()) + ":" + this.checkTime(tmp_start_time.getMinutes()) 
-                                              + " " + this.checkTime(tmp_start_time.getDate()) + '/' + this.checkTime(tmp_start_time.getMonth() + 1) + '/' + tmp_start_time.getFullYear()),
-                                               'end' : (this.checkTime(tmp_end_time.getHours()) + ":" + this.checkTime(tmp_end_time.getMinutes()) 
-                                              + " " + this.checkTime(tmp_end_time.getDate()) + '/' + this.checkTime(tmp_end_time.getMonth() + 1) + '/' + tmp_end_time.getFullYear())
-                                                };
-      // convert product_auction_status
-        switch (item.product_auction_status) {
-          case 0:
-            data[index]['product_auction_status'] = "Bản nháp";
-            break;
-          case 1:
-            data[index]['product_auction_status'] = "Đang diễn ra";
-            break;
-          case 2:
-            data[index]['product_auction_status'] = "Đã kết thúc";
-            break;
-        }                            
-    },
-    checkTime(i) {
-        return (i < 10) ? "0" + i : i;
+    numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     }
   },
-  components: {
-    DatePicker
-  },
   mounted() {
-    this.retrieveProducrts();
-      // add external script hereeee
-      // let recaptchaScript = document.createElement('script')
-      // let recaptchaScript2 = document.createElement('script')
-      // recaptchaScript.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
-      // recaptchaScript2.setAttribute('src', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
-      // document.head.appendChild(recaptchaScript)
-      // document.head.appendChild(recaptchaScript2)
+    console.log(this.data['auction_start_end_time']);
   }
 };
 </script>
-
-<style>
-
-</style>

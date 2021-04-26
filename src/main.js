@@ -13,6 +13,8 @@ Vue.use(VueMeta)
 // import datePicker from 'vue-bootstrap-datetimepicker';
 // import 'bootstrap/dist/css/bootstrap.css';
 // Vue.use(datePicker);
+import VModal from 'vue-js-modal'
+Vue.use(VModal, { dynamic: true, injectModalsContainer: true,  adaptive: true });
 
 
 Vue.config.productionTip = false

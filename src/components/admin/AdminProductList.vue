@@ -43,7 +43,7 @@
     </div>
     <div class="row row-no-margin admin-search-product-filter">
       <div class="col-12 pl-24p pr-20p pb-8p d-flex justify-content-end align-items-center">
-        <div class="mr-auto"> 1-{{products.length}} / {{ products.length}} đấu giá 
+        <div class="mr-auto"> {{products.length}}-{{products.length}} / {{ products.length}} đấu giá 
           <span class="fa fa-angle-left pl-20p" aria-hidden="true"></span> 
           <span class="fa fa-angle-right pl-20p" aria-hidden="true"></span>
         </div>
@@ -64,13 +64,16 @@
         :items="products" 
         :fields="fields"
         :sticky-header="stickyHeader"
+        @row-clicked="viewDetail"
       >
         <template #cell(auction_start_end_time)="data">
           {{ data.value.start}} <br> {{ data.value.end}}
         </template>
+        <template #cell(product_begin_prize)="data">
+          {{ numberWithCommas(data.value)}} đ
+        </template>
       </b-table>
     </div>
-    
   </div>
 </template>
 <script>
@@ -79,6 +82,8 @@ import DatePicker from "vue2-datepicker";
 import 'vue2-datepicker/index.css';
 
 import ProductDataService from "../../services/ProductDataService";
+import ProductDetail from "./AdminProductDetail.vue";
+
 export default {
   name: "AdminAuctionManagement",
   metaInfo: {
@@ -94,7 +99,7 @@ export default {
       stickyHeader: 'calc(100vh - 180.5px)', 
       fields: [
             {
-              key: 'id',
+              key: 'product_code',
               label: 'Mã đấu giá',
               sortable: true
             },
@@ -149,7 +154,7 @@ export default {
       // convert product_auction_status
         switch (item.product_auction_status) {
           case 0:
-            data[index]['product_auction_status'] = "Bản nháp";
+            data[index]['product_auction_status'] = "Sắp diễn ra";
             break;
           case 1:
             data[index]['product_auction_status'] = "Đang diễn ra";
@@ -161,6 +166,23 @@ export default {
     },
     checkTime(i) {
         return (i < 10) ? "0" + i : i;
+    },
+    numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    },
+    viewDetail(item, index) {
+      console.log(index);
+      this.$modal.show(
+        ProductDetail,
+        {
+          data: item
+        },
+        {
+          draggable: true,
+          height: '90%',
+          width: '90%'
+        }
+      );
     }
   },
   components: {
