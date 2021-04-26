@@ -577,8 +577,6 @@
 </template>
 
 <script>
-
-
 export default {
   name: "homepage",
   metaInfo: {

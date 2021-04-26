@@ -38,15 +38,6 @@
       </div>
   </div>
 
-
-
-
-
-
-
-
-
-
 </template>
 
 <script>

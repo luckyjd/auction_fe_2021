@@ -26,6 +26,11 @@ export default new Router({
           path: "/products",
           name: "products",
           component: () => import("./components/portal/ProductList")
+        },
+        {
+          path: "/product/1",
+          name: "product_detail",
+          component: () => import("./components/portal/ProductDetail")
         }
       ]
     },
