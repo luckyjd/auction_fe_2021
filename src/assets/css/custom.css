@@ -110,6 +110,9 @@ html, body {
 .pl-24p{
     padding-left: 24px !important;
 }
+.pl-32p{
+    padding-left: 32px !important;
+}
 .pr-2p{
     padding-right: 2px !important;
 }
@@ -130,6 +133,9 @@ html, body {
 }
 .pr-24p{
     padding-right: 24px !important;
+}
+.pr-32p{
+    padding-right: 32px !important;
 }
 .pt-2p{
     padding-top: 2px !important;
@@ -712,4 +718,34 @@ html, body {
 .product_detail_data_wrapper { 
     max-height: calc(100% - 158px);
     overflow-y: scroll;
+}
+.m-center{
+    margin: 0 auto;
+}
+.no-boder{
+    border: none;
+}
+.table-info-auction th{
+    border-top: none;
+}
+.table-info-auction .table thead th{
+    border-bottom: none;
+}
+.br-1p{
+    border-right: 1px solid #ccc;
+}
+.bdr-1p{
+    border: 1px solid #ccc;
+}
+.bdr-r1p{
+    border-radius: 0.25rem;
+}
+.p-25-50{
+    padding: 25px 50px;
+}
+.pay-status td{
+    border:none;
+}
+.text-right{
+    text-align: right;
 }

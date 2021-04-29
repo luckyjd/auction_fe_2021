@@ -1,4 +1,5 @@
 <template>
+  
   <div class="row row-no-margin p-0">
     <div class="row row-no-margin  d-flex justify-content-center">
       <div class="row row-no-margin template-content-container">
@@ -11,17 +12,58 @@
                 </div>
                 <input class="border-0 " type="text" placeholder="Tên tài sản" id="product_name" name="product_name" >
               </div>
-              <div class="col-4 p-0 d-flex justify-content-start align-items-center">
+              <div class="col-4 p-0 d-flex justify-content-end align-items-center">
                 <div class="">
                   <date-range-picker
                     v-model="dateRange"
                   ></date-range-picker>
                 </div>
-                <button type="button" class="btn btn-primary" style="background-color: #713C39; border-color: #713C39;">Tìm Kiếm</button>
+                <button type="button" class="btn btn-primary ml-8p" style="background-color: #713C39; border-color: #713C39;">Tìm Kiếm</button>
+              </div>
+            </div>
+            <div class="row row-no-margin d-flex justify-content-start align-items-center">
+              <div class="col-8 p-0 d-flex justify-content-start align-items-center">
+                <select  class="form-control m-w-140p">
+                  <option disabled value="" hidden>Tỉnh/Thành phố</option>
+                  <option value="1">Hà Nội</option>
+                  <option value="2">TP HCM</option>
+                  <option value="3">Hải Phòng</option>
+                </select>
+                <select class="form-control m-w-140p ml-20p">
+                  <option disabled value="" hidden>Quận/Huyện</option>
+                  <option value="1">Hoàn Kiếm</option>
+                  <option value="2">Hà Đông</option>
+                  <option value="3">Hoàng Mai</option>
+                </select>
+                <select class="form-control m-w-140p ml-20p">
+                  <option disabled value="" hidden>Xã/Phường</option>
+                  <option value="1">Phú Lương</option>
+                  <option value="2">Vạn Phúc</option>
+                  <option value="3">Nguyễn Trãi</option>
+                </select>
+                <select class="form-control m-w-140p ml-20p">
+                  <option disabled value="" hidden>Xã/Phường</option>
+                  <option value="1">Phú Lương</option>
+                  <option value="2">Vạn Phúc</option>
+                  <option value="3">Nguyễn Trãi</option>
+                </select>
+              </div>
+              <div class="col-4 p-0 d-flex justify-content-end align-items-center flex-column">
+                <div>
+                  <div>Sắp xếp theo</div>
+                <div>
+                  <select class="form-control m-w-140p">
+                  <option disabled value="" hidden>Xã/Phường</option>
+                  <option value="1">Phú Lương</option>
+                  <option value="2">Vạn Phúc</option>
+                  <option value="3">Nguyễn Trãi</option>
+                </select>
+                </div>
+                </div>
               </div>
             </div>
             <div class="auction-info-wrapper col-12 p-0 d-flex justify-content-center">
-      <div class="col-12 p-0 pr-24p">
+      <div class="col-12 p-0">
         <div class="row row-no-margin auction-today p-8p">
           <div class="col-12 p-0">
             <div class="row row-no-margin">
@@ -156,6 +198,9 @@
               </div>
             </div>
           </div>
+          <div class="pt-24p pb-22p m-center">
+            <pagination/>
+          </div>
         </div>
       </div>
 
@@ -171,6 +216,7 @@
 // import daterangepicker 
 import DateRangePicker from 'vue2-daterange-picker'
 import 'vue2-daterange-picker/dist/vue2-daterange-picker.css'
+import Pagination from './Pagination.vue';
 // import ProductDataService from "../../services/ProductDataService";
 
 export default {
@@ -209,7 +255,8 @@ export default {
     // },
   },
   components: {
-      DateRangePicker
+    DateRangePicker,
+    Pagination
     },
   mounted() {
       // add external script hereeee
