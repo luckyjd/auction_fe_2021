@@ -389,8 +389,8 @@
         }
 
         img {
-          width: 100%;
-          height: 100%;
+          width: 547px;
+          height: 360px;
         }
 
         .prev, .next {
