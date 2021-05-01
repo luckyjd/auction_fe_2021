@@ -19,24 +19,24 @@
           </div>
           <div class="row-no-margin p-0 col-6 d-flex justify-content-end align-items-center user-info">
             <!-- <div class="col-8 p-0 d-flex justify-content-start search-group pl-1 pr-1"> -->
-              <div class="row-no-margin search-group d-flex justify-content-start">
-                <div class="m-4p pl-4p pr-4p">
-                  <div class="search-icon"></div>
-                </div>
-                <input class="border-0 w-100" type="text" placeholder="Tìm kiếm" id="usr" name="username" >
+            <div class="row-no-margin search-group d-flex justify-content-start">
+              <div class="m-4p pl-4p pr-4p">
+                <div class="search-icon"></div>
               </div>
-              <i class="fa fa-question-circle" aria-hidden="true"></i>
-              <i class="fa fa-cog" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              <input class="border-0 w-100" type="text" placeholder="Tìm kiếm" id="usr" name="username">
+            </div>
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-user-circle-o" @click="$bvModal.show('modal-login')" aria-hidden="true"></i>
           </div>
         </div>
       </div>
       <div id="page-content" class="d-flex justify-content-center">
-        <router-view />
+        <router-view/>
       </div>
       <div id="footer-container" class="position-relative row-no-margin row d-flex justify-content-center">
-        
+
         <div class="footer-wrapper d-flex justify-content-between row-no-margin template-content-container">
           <div class="footer-address d-flex flex-column text-white">
             <div class="d-flex justify-content-start align-items-center">
@@ -51,14 +51,15 @@
             <div class="font-14 font-regular p-8p">
               <i class="fa fa-phone font-16 p-4p" aria-hidden="true"></i>
               024 3984 2728
-              </div>
+            </div>
             <div class="font-14 font-regular p-8p">
               <i class="fa fa-mobile font-20 p-4p pr-8p" aria-hidden="true"></i>
               024 3984 2728
             </div>
             <div class="font-14 font-regular p-8p">
               <i class="fa fa-envelope p-4p" aria-hidden="true"></i>
-              info@daugiavietnam.vn</div>
+              info@daugiavietnam.vn
+            </div>
           </div>
           <div class="footer-info ml-auto d-flex justify-content-start text-white pr-24p">
             <div class="footer-doc d-flex flex-column pr-24p pl-24p ">
@@ -79,19 +80,47 @@
 
           </div>
         </div>
-        
+
         <div class="position-absolute license">
-          <div class="p-12p">Quyết định số 112/QĐ-STP của Sở Tư Pháp thành phố Hà Nội phê duyệt tổ chức đấu giá tài sản đủ điều kiện thực hiện hình thức đấu giá trực tuyến ngày 12/05/2020</div>
+          <div class="p-12p">Quyết định số 112/QĐ-STP của Sở Tư Pháp thành phố Hà Nội phê duyệt tổ chức đấu giá tài sản
+            đủ điều kiện thực hiện hình thức đấu giá trực tuyến ngày 12/05/2020
+          </div>
         </div>
       </div>
     </div>
+    <ModalLogin @openModalRegister="openModalRegister">
+
+    </ModalLogin>
+    <ModalRegister @openModalLogin="openModalLogin">
+
+    </ModalRegister>
   </div>
 </template>
 
 <script>
-export default {
-name: "Layout",
-}
+    import ModalLogin from "./ModalLogin";
+    import ModalRegister from "./ModalRegister";
+
+    export default {
+        name: "Layout",
+        components: {
+            ModalLogin,
+            ModalRegister
+        },
+        data() {
+            return {}
+        },
+        methods: {
+            openModalRegister() {
+                this.$bvModal.hide('modal-login')
+                this.$bvModal.show('modal-register')
+            },
+            openModalLogin() {
+                this.$bvModal.hide('modal-register')
+                this.$bvModal.show('modal-login')
+            }
+        }
+    }
 </script>
 
 <style scoped>
