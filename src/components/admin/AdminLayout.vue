@@ -10,7 +10,7 @@
               </div>
               <ul class="nav flex-column flex-nowrap overflow-hidden">
                   <li class="nav-item">
-                    <a class="nav-link text-truncate" href="#"><i class="fa fa-id-card" aria-hidden="true"></i> <span class="d-none d-sm-inline">Quản lý khách hàng</span></a>
+                    <a class="nav-link text-truncate" href="/admin/users"><i class="fa fa-id-card" aria-hidden="true"></i> <span class="d-none d-sm-inline">Quản lý khách hàng</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-truncate" href="/admin/products"><i class="fa fa-star-o" aria-hidden="true"></i> <span class="d-none d-sm-inline">Quản lý đấu giá</span></a>
