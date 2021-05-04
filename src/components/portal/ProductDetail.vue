@@ -18,7 +18,7 @@
                   <!--                <a class="prev" @click="prev" href="#">&#10094; Previous</a>-->
                   <!--                <a class="next" @click="next" href="#">&#10095; Next</a>-->
                 </div>
-                <div class="row-no-margin list-images">
+                <div class="row-no-margin list-images list-images-product-detail">
                   <div v-for="image in images" :key="image">
                     <img @click="selectImage(image)" :src="image"/>
                   </div>

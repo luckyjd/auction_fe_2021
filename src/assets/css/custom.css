@@ -749,3 +749,10 @@ html, body {
 .text-right{
     text-align: right;
 }
+.list-images-product-detail{
+    overflow-x: auto;
+    overflow: hidden;
+}
+.list-images-product-detail:hover{
+    overflow: auto;
+}
