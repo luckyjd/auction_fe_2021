@@ -53,6 +53,11 @@ export default new Router({
           path: "/admin/products/create",
           name: "adminProductCreate",
           component: () => import("./components/admin/AdminProductCreate")
+        },
+        {
+          path: "/admin/users",
+          name: "adminUserList",
+          component: () => import("./components/admin/AdminUserList")
         }
       ]
     }
