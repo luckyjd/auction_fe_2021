@@ -1,8 +1,8 @@
 import http from "../http-common";
 
 class ProductDataService {
-  getAll() {
-    return http.get("/product");
+  getAll(size=8) {
+    return http.get(`/product?size=${size}`);
   }
 
   get(id) {
@@ -10,7 +10,7 @@ class ProductDataService {
   }
 
   create(data) {
-    return http.post("/product", data);
+    return http.post(`/product`, data);
   }
 
   // update(id, data) {

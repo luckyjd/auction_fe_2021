@@ -700,6 +700,9 @@ html, body {
 .upload-multi-preview .image-container {
     width: 670px !important;
 }
+.upload-owner-preview .image-container {
+    width: 335px !important;
+}
 .admin-search-product-list table td{ 
     vertical-align: middle;
     padding: 4px;

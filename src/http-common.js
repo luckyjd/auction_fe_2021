@@ -7,15 +7,15 @@ const axiosApi = axios.create({
     "Content-type": "application/json"
   }
 })
-const getToken = (name)  => {
-  const value = `; ${document.cookie}`;
-  const parts = value.split(`; ${name}=`);
-  if (parts.length === 2) return parts.pop().split(';').shift();
-}
+// const getToken = (name)  => {
+//   const value = `; ${document.cookie}`;
+//   const parts = value.split(`; ${name}=`);
+//   if (parts.length === 2) return parts.pop().split(';').shift();
+// }
 
-export const setAuthHeader = (token) => {
-axiosApi.defaults.headers.common['Authorization'] = `Bearer ${token}`
-}
-setAuthHeader(getToken('au_tk_ntx'));
+// export const setAuthHeader = (token) => {
+// axiosApi.defaults.headers.common['Authorization'] = `Bearer ${token}`
+// }
+// setAuthHeader(getToken('au_tk_ntx'));
 
 export default axiosApi;

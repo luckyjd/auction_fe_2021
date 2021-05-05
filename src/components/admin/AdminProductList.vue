@@ -85,7 +85,7 @@ import ProductDataService from "../../services/ProductDataService";
 import ProductDetail from "./AdminProductDetail.vue";
 
 export default {
-  name: "AdminAuctionManagement",
+  name: "AdminProductList",
   metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
       title: 'Admin Auction Online',
@@ -131,8 +131,8 @@ export default {
     }
   },
   methods: {
-    retrieveProducrts() {
-      ProductDataService.getAll()
+    retrieveProducts() {
+      ProductDataService.getAll(8)
         .then(response => {
           this.products = response.data;
           this.products.forEach(this.convertProducts);
@@ -189,7 +189,7 @@ export default {
     DatePicker
   },
   mounted() {
-    this.retrieveProducrts();
+    this.retrieveProducts();
       // add external script hereeee
       // let recaptchaScript = document.createElement('script')
       // let recaptchaScript2 = document.createElement('script')

@@ -116,6 +116,7 @@
                 @data-change="dataChange"
                 :data-images="auction_product_images"
                 idUpload=1
+                :maxImage=4
                 ></vue-upload-multiple-image>
             </div>
         </div>
@@ -240,14 +241,28 @@
           <div class="p-title pr-12p pt-12p pb-12p">Ảnh CMND/CCCD/Hộ chiếu</div>
         </div>
         <div class="col-12 p-0 m-12p d-flex justify-content-start align-items-center">
-          <div class="upload-multi-preview">
+          <div class="upload-owner-preview">
             <vue-upload-multiple-image
-              @upload-success="uploadProductOwnerImageSuccess"
+              @upload-success="uploadProductOwnerImageFrontSuccess"
               @before-remove="beforeRemove"
               @edit-image="editImage"
               @data-change="dataChange"
-              :data-images="auction_user_card_no_images"
+              :data-images="product_owner_represent_id_card_image_front"
               idUpload=2
+              :maxImage=1
+              dragText="Ảnh mặt trước"
+              ></vue-upload-multiple-image>
+          </div>
+          <div class="upload-owner-preview">
+            <vue-upload-multiple-image
+              @upload-success="uploadProductOwnerImageBackSuccess"
+              @before-remove="beforeRemove"
+              @edit-image="editImage"
+              @data-change="dataChange"
+              :data-images="product_owner_represent_id_card_image_back"
+              idUpload=3
+              :maxImage=1
+              dragText="Ảnh mặt sau"
               ></vue-upload-multiple-image>
           </div>
         </div>
@@ -328,6 +343,12 @@ export default {
       myIdUpload2 : 2,
       auction_product_images: [],
       auction_user_card_no_images: [],
+      product_owner_represent_id_card_image_front: [],
+      product_owner_represent_id_card_image_back: [],
+      auction_required_list: ['deposit_start_date', 'deposit_start_time',
+                              'view_start_date', 'view_start_time',
+                               'auction_start_date', 'auction_start_time',
+                               'auction_end_date', 'auction_end_time'],
 // step 1 
       auction: {},
       // product_title,
@@ -390,18 +411,13 @@ export default {
   },
   methods: {
     uploadProductImageSuccess(formData, index, fileList) {
-      // console.log('formData : ', formData);
-      // console.log('index : ', index);
-      // console.log('fileList : ', fileList);
       this.auction.product_images = fileList;
-    
-      // Upload image api
-      // axios.post('http://your-url-upload', { data: formData }).then(response => {
-      //   console.log(response)
-      // })
     },
-    uploadProductOwnerImageSuccess(formData, index, fileList) {
-      this.auction.owner_card_images = fileList;
+    uploadProductOwnerImageFrontSuccess(formData, index, fileList) {
+      this.auction.product_owner_represent_id_card_image_front = fileList;
+    },
+    uploadProductOwnerImageBackSuccess(formData, index, fileList) {
+      this.auction.product_owner_represent_id_card_image_back = fileList;
       // Upload image api
       // axios.post('http://your-url-upload', { data: formData }).then(response => {
       //   console.log(response)
@@ -422,6 +438,7 @@ export default {
       console.log(data)
     },
     createAuction() {
+
       this.auction = this.convertProductData(this.auction);
       console.log(this.auction);
       ProductDataService.create(this.auction)
@@ -435,21 +452,29 @@ export default {
         });
     },
     convertProductData(data){
-      data.deposit_start_date.setHours(data.deposit_start_time.getHours());
-      data.deposit_start_date.setMinutes(data.deposit_start_time.getMinutes());
-      data.deposit_start_time = data.deposit_start_date;
+      if (data.deposit_start_date && data.deposit_start_time) {
+        data.deposit_start_date.setHours(data.deposit_start_time.getHours());
+        data.deposit_start_date.setMinutes(data.deposit_start_time.getMinutes());
+        data.deposit_start_time = data.deposit_start_date;
+      }
 
-      data.view_start_date.setHours(data.view_start_time.getHours());
-      data.view_start_date.setMinutes(data.view_start_time.getMinutes());
-      data.view_start_time = data.view_start_date;
+      if (data.view_start_date && data.view_start_time) {
+        data.view_start_date.setHours(data.view_start_time.getHours());
+        data.view_start_date.setMinutes(data.view_start_time.getMinutes());
+        data.view_start_time = data.view_start_date;
+      }
 
-      data.auction_start_date.setHours(data.auction_start_time.getHours());
-      data.auction_start_date.setMinutes(data.auction_start_time.getMinutes());
-      data.auction_start_time = data.auction_start_date;
-      
-      data.auction_end_date.setHours(data.auction_end_time.getHours());
-      data.auction_end_date.setMinutes(data.auction_end_time.getMinutes());
-      data.auction_end_time = data.auction_end_date;
+      if (data.auction_start_date && data.auction_start_time) {
+        data.auction_start_date.setHours(data.auction_start_time.getHours());
+        data.auction_start_date.setMinutes(data.auction_start_time.getMinutes());
+        data.auction_start_time = data.auction_start_date;
+      }
+
+      if (data.auction_end_date && data.auction_end_time) {
+        data.auction_end_date.setHours(data.auction_end_time.getHours());
+        data.auction_end_date.setMinutes(data.auction_end_time.getMinutes());
+        data.auction_end_time = data.auction_end_date;
+      }
       return data;
     }
   },
