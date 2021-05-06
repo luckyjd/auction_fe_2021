@@ -36,7 +36,7 @@
           <date-picker v-model="auction.auction_end_date" type="date" class="" style="width:240px;" placeholder="Ngày/Tháng/Năm"></date-picker>
         </div>
 
-        <div class="col-8 p-0 m-12p d-flex justify-content-center align-items-center">
+        <div class="col-12 p-0 m-12p d-flex justify-content-center align-items-center">
           <button type="button" class="btn btn-danger bg-color-theme-admin" v-on:click="step = 2">Tiếp tục</button>
           <router-link to="/admin/products" tag="button" class="btn btn-default border-000000 ml-24p" style="width:72px;">Huỷ</router-link>
         </div>
@@ -103,7 +103,7 @@
         <div class="col-12 p-0 ml-12p mt-12p mr-12p d-flex justify-content-start align-items-center">
           <div class="p-title pr-12p pt-12p pb-12p">Thông tin chi tiết</div>
         </div>
-        <div class="col-12 p-0 m-12p ">
+        <div class="col-12 p-0 m-12p">
           <ckeditor v-model="auction.product_detail_data" :config="editorConfig"></ckeditor>
         </div>
         <div class="col-12 p-0 m-12p ">
@@ -122,7 +122,7 @@
         </div>
 
 
-        <div class="col-8 p-0 m-12p d-flex justify-content-center align-items-center">
+        <div class="col-12 p-0 m-12p d-flex justify-content-center align-items-center">
           <button type="button" class="btn btn-danger bg-color-theme-admin" v-on:click="step = 1">Quay lại</button>
           <button type="button" class="btn btn-danger bg-color-theme-admin ml-24p" v-on:click="step = 3">Tiếp tục</button>
           <router-link to="/admin/products" tag="button" class="btn btn-default border-000000 ml-24p" style="width:72px;">Huỷ</router-link>
@@ -293,7 +293,7 @@
           <div class="p-title pr-12p pt-12p pb-12p">Chủ tài khoản</div>
           <input class="p-8p pr-16p" type="text" placeholder="Nhập tên chủ tài khoản" name="product_owner_represent_bank_user_name" v-model="auction.product_owner_represent_bank_user_name" style="min-width: 470px;">       
         </div>
-        <div class="col-8 p-0 m-12p d-flex justify-content-center align-items-center">
+        <div class="col-12 p-0 m-12p d-flex justify-content-center align-items-center">
           <button type="button" class="btn btn-danger bg-color-theme-admin" v-on:click="step = 2">Quay lại</button>
           <button type="button" class="btn btn-danger bg-color-theme-admin ml-24p" @click="createAuction()" >Tạo đấu giá mới</button>
           <router-link to="/admin/products" tag="button" class="btn btn-default border-000000 ml-24p" style="width:72px;">Huỷ</router-link>

@@ -41,6 +41,8 @@
 </template>
 
 <script>
+
+
 export default {
 name: "AdminLayout",
 }

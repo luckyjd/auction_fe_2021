@@ -70,128 +70,28 @@
               <div class="col-12 font-bold font-20 p-0 pb-4p pl-8p">Đấu giá hôm nay</div>
               <div class="col-12 p-0 d-flex justify-content-between pl-8p pr-8p">
                 <div class="font-14 font-medium" style="color: #8A91A1;">8 sản phẩm</div>
-                <a class="font-14 font-medium" style="color: #274AF2;">Xem tất cả</a>
+                
               </div>
             </div>
           </div>
           <div class="col-12 p-0">
             <div class="row row-no-margin">
-              <div class="col-3 p-0 auction-today-post p-8p">
-                <div class="auction-today-post-single">
-                  <img src="~@/assets/image/auction-today-post/img3.png">
+              <div v-for="product in products" :key="product.id" class="col-3 p-0 auction-today-post p-8p" >
+                <div class="auction-today-post-single" @click="detailProduct(product.id)">
+                  <img v-bind:src="urlApi() + product.product_image_1">
                   <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
+                    <div class="font-14 font-bold pl-0 pr-0">{{product.product_title}}</div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá hiện tại:</div>
-                      <div class="text-red font-bold">120.000.000 đ</div>
+                      <div class="text-red font-bold">???? đ</div>
                     </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Giá khởi điểm:</div>
-                      <div class="text-gray font-regular">36.000.000 đ</div>
+                      <div class="text-gray font-regular">{{product.product_begin_prize}} đ</div>
                     </div>
                     <div class="col-12 p-0 d-flex justify-content-between">
                       <div class="text-gray font-regular">Kết thúc:</div>
-                      <div class="font-bold">09:00 - 15/11/2020</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-0 auction-today-post p-8p">
-                <div class="auction-today-post-single">
-                  <img src="~@/assets/image/auction-today-post/img2.png">
-                  <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá hiện tại:</div>
-                      <div class="text-red font-bold">120.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá khởi điểm:</div>
-                      <div class="text-gray font-regular">36.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Kết thúc:</div>
-                      <div class="font-bold">09:00 - 15/11/2020</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-0 auction-today-post p-8p">
-                <div class="auction-today-post-single">
-                  <img src="~@/assets/image/auction-today-post/img.png">
-                  <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá hiện tại:</div>
-                      <div class="text-red font-bold">120.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá khởi điểm:</div>
-                      <div class="text-gray font-regular">36.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Kết thúc:</div>
-                      <div class="font-bold">09:00 - 15/11/2020</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-0 auction-today-post p-8p">
-                <div class="auction-today-post-single">
-                  <img src="~@/assets/image/auction-today-post/img.png">
-                  <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá hiện tại:</div>
-                      <div class="text-red font-bold">120.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá khởi điểm:</div>
-                      <div class="text-gray font-regular">36.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Kết thúc:</div>
-                      <div class="font-bold">09:00 - 15/11/2020</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-0 auction-today-post p-8p">
-                <div class="auction-today-post-single">
-                  <img src="~@/assets/image/auction-today-post/img3.png">
-                  <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá hiện tại:</div>
-                      <div class="text-red font-bold">120.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá khởi điểm:</div>
-                      <div class="text-gray font-regular">36.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Kết thúc:</div>
-                      <div class="font-bold">09:00 - 15/11/2020</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-0 auction-today-post p-8p">
-                <div class="auction-today-post-single">
-                  <img src="~@/assets/image/auction-today-post/img3.png">
-                  <div class="row row-no-margin p-8p font-14">
-                    <div class="font-14 font-bold">This is auction-today-post title long long long long </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá hiện tại:</div>
-                      <div class="text-red font-bold">120.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Giá khởi điểm:</div>
-                      <div class="text-gray font-regular">36.000.000 đ</div>
-                    </div>
-                    <div class="col-12 p-0 d-flex justify-content-between">
-                      <div class="text-gray font-regular">Kết thúc:</div>
-                      <div class="font-bold">09:00 - 15/11/2020</div>
+                      <div class="font-bold">{{convertTime(product.auction_end_time)}}</div>
                     </div>
                   </div>
                 </div>
@@ -217,8 +117,8 @@
 import DateRangePicker from 'vue2-daterange-picker'
 import 'vue2-daterange-picker/dist/vue2-daterange-picker.css'
 import Pagination from './Pagination.vue';
-// import ProductDataService from "../../services/ProductDataService";
-
+import ProductDataService from "../../services/ProductDataService";
+// import CommonService from "../../service-common";
 export default {
   name: "products",
   metaInfo: {
@@ -233,32 +133,50 @@ export default {
           startDate: '2021-03-20',
           endDate: '2021-03-28',
         },
+        products : [],
       }
     },
   methods: {
     dateFormat (classes, date) {
-        if (!classes.disabled) {
-          classes.disabled = date.getTime() < new Date()
-        }
-        return classes
-      },
-    // retrieveProducrts() {
-    //   ProductDataService.getAll()
-    //     .then(response => {
-    //       this.products = response.data;
-    //       // this.products.forEach(this.convertProducts);
-    //       console.log(response.data);
-    //     })
-    //     .catch(e => {
-    //       console.log(e);
-    //     });
-    // },
+      if (!classes.disabled) {
+        classes.disabled = date.getTime() < new Date()
+      }
+      return classes
+    },
+    retrieveProducts() {
+      ProductDataService.getAll(8)
+        .then(response => {
+          this.products = response.data;
+          console.log(response.data);
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    },
+    detailProduct(id) {
+        this.$router.push({ name: 'product_detail', params: { id: id } })
+    },
+    urlApi () {
+      return process.env.VUE_APP_ROOT;
+    },
+    convertTime (time_in) {
+      let time_tmp = new Date(time_in);
+       return (this.checkTime(time_tmp.getHours()) + ":" + this.checkTime(time_tmp.getMinutes()) 
+            + " - " + this.checkTime(time_tmp.getDate()) + '/' + this.checkTime(time_tmp.getMonth() + 1) + '/' + time_tmp.getFullYear())                     
+    },
+    checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    },
+    
   },
+
   components: {
     DateRangePicker,
     Pagination
     },
   mounted() {
+      this.retrieveProducts();
+      // Layout.$bvModal.show('modal-login');
       // add external script hereeee
       // let recaptchaScript = document.createElement('script')
       // let recaptchaScript2 = document.createElement('script')

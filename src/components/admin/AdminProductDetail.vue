@@ -23,16 +23,16 @@
         <div class="row row-no-margin product-detail-image-wrapper pt-24p pb-24p" style="border-bottom: 1px solid rgb(200, 195, 195);">
           <div class="col-12 font-16 font-medium p-0">Hình ảnh</div>
           <div class="col-3 p-8p">
-            <img src="~@/assets/image/auction-detail-post/im1.jpg">
+            <img v-bind:src="urlApi() + '/' + data.product_image_1">
           </div>
           <div class="col-3 p-8p">
-            <img src="~@/assets/image/auction-detail-post/im2.jpg">
+            <img v-bind:src="urlApi() + '/' + data.product_image_2">
           </div>
           <div class="col-3 p-8p">
-            <img src="~@/assets/image/auction-detail-post/im3.jpg">
+            <img v-bind:src="urlApi() + '/' + data.product_image_3">
           </div>
           <div class="col-3 p-8p">
-            <img src="~@/assets/image/auction-detail-post/im4.jpg">
+            <img v-bind:src="urlApi() + '/' + data.product_image_4">
           </div>
         </div>
         <div class="row row-no-margin product_detail_data_wrapper pt-24p pb-24p" v-html="data.product_detail_data"></div>
@@ -57,10 +57,12 @@ export default {
       if(x){
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
       } else {return ""}
+    },
+    urlApi () {
+      return process.env.VUE_APP_ROOT;
     }
   },
   mounted() {
-    
   }
 };
 </script>

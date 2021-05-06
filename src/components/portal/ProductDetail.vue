@@ -6,8 +6,7 @@
           <div class="row row-no-margin auction-today p-8p">
             <div class="col-12 p-0">
               <div class="row row-no-margin">
-                <div class="col-12 font-bold font-20 p-0 pb-4p pl-8p">Xe ô tô Trung Quốc đời Tống, không rõ là hãng
-                  nào
+                <div class="col-12 font-bold font-20 p-0 pb-4p pl-8p">{{product.product_title}}
                 </div>
               </div>
               <div class="row row-no-margin slider-image-product">
@@ -86,95 +85,8 @@
       </div>
       <div class="auction-info-wrapper col-12 p-0 d-flex justify-content-center">
         <div class="col-8 p-0 pr-24p">
-          <div class="row row-no-margin auction-today p-8p">
-            <div class="col-12 p-0">
-              <div class="row row-no-margin">
-                <div class="col-12 font-bold font-20 p-0 pb-4p pl-8p">Thông tin tài sản</div>
-              </div>
-            </div>
-            <div class="col-12 p-0">
-              <div class="row row-no-margin">
-                <div class="col-12 p-0 auction-today-post p-8p">
-                  <div class="table-info-auction pb-8p">
-                    <table class="table">
-                      <thead>
-                      <tr>
-                        <th class="font-bold" scope="col">Tình trạng</th>
-                        <th class="font-bold" scope="col">Hãng sản xuất</th>
-                        <th class="font-bold" scope="col">Dòng xe</th>
-                        <th class="font-bold" scope="col">Năm sản xuất</th>
-                        <th class="font-bold" scope="col">Xuất xứ</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                        <td>Đã qua sử dụng</td>
-                        <td>Kia</td>
-                        <td>Sedan</td>
-                        <td>2012</td>
-                        <td>China</td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="table-info-auction">
-                    <table class="table">
-                      <thead>
-                      <tr>
-                        <th scope="col">Tình trạng</th>
-                        <th scope="col">Hãng sản xuất</th>
-                        <th scope="col">Dòng xe</th>
-                        <th scope="col">Năm sản xuất</th>
-                        <th scope="col">Xuất xứ</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                        <td>Đã qua sử dụng</td>
-                        <td>Kia</td>
-                        <td>Sedan</td>
-                        <td>2012</td>
-                        <td>China</td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="pb-8p">
-                    <p>+ Vị trí cực đẹp Phố Phạm Hồng Thái là một trong những con phố đẹp, thoáng và sạch sẽ nhất quận
-                      Ba Đình, kinh doanh cực đỉnh THU NHẬP 45 TRIỆU/THÁNG, khu vực dân trí cực cao, sầm uất nhiều công
-                      sở, khách sạn lớn.</p>
-                    <p>+ Diện tích sử dụng 188m2 Nhà xây 4 tầng chắc chắn, tọa lạc ở vị trí đẹp nhất phố, vỉa hè kinh
-                      doanh lý tưởng để cho thuê văn phòng, công ty, nhà hàng, spa doanh thu đều cực kỳ cao. + Sổ đỏ
-                      chính chủ - Giá bán 17.5 tỷ.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 p-0">
-              <div class="row row-no-margin">
-                <div class="col-12 font-bold font-20 p-0 pb-4p pl-8p">Vị trí</div>
-                <div class="col-12 p-0 d-flex justify-content-between pl-8p pr-8p">
-                  <div class="font-14 font-medium" style="color: #8A91A1;">Số 1 Tràng Tiền, Q. Hoàn Kiếm, Phường Tràng
-                    Tiền, Hà Nội
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 p-0">
-              <div class="row row-no-margin">
-                <div class="col-12 p-0 auction-today-post p-8p">
-                  <div class="table-info-auction pb-8p">
-
-                  </div>
-                  <div class="pb-8p">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.213050001854!2d105.8556486150294!3d21.024159693310985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abebfda1baad%3A0x47279bca5bb3202!2zMSBUcsOgbmcgVGnhu4FuLCBQaGFuIENodSBUcmluaCwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1619626193376!5m2!1svi!2s"
-                      width="720" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <div class="row row-no-margin product_detail_data_html pt-24p pb-24p" style="background-color: #fff;x" 
+            v-html="product.product_detail_data"></div>
         </div>
         <div class="auction-notification col-4 p-8p">
           <div class="row row-no-margin">
@@ -185,7 +97,7 @@
       </div> <!--  end aution-info-wrapper  -->
       <div class="auction-news-wrapper col-12 p-0">
         <div class="row row-no-margin auction-news p-8p">
-          <div class="col-12 p-0 font-bold font-20 pb-8p pl-8p pr-8p">Tươg tự</div>
+          <div class="col-12 p-0 font-bold font-20 pb-8p pl-8p pr-8p">Tương tự</div>
           <div class="col-12 p-0 d-flex justify-content-between pl-8p pr-8p">
             <div class="font-14 font-medium" style="color: #8A91A1;">8 sản phẩm</div>
             <a class="font-14 font-medium" style="color: #274AF2;">Xem tất cả</a>
@@ -321,6 +233,8 @@
 </template>
 
 <script>
+    import ProductDataService from "../../services/ProductDataService";
+    // import CommonService from "../../service-common";
 
     export default {
         name: "product_detail",
@@ -336,17 +250,42 @@
                     startDate: '2021-03-20',
                     endDate: '2021-03-28',
                 },
-                images: [
-                    "https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg",
-                    "https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg",
-                    "https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg",
-                    "https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg"
-                ],
-                imageSelected: "https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg",
+                product : {},
+                images: [],
+                imageSelected: "",
+            }
+        },
+        methods: {
+            selectImage(image) {
+                this.imageSelected = image;
+            },
+            getProduct(id) {
+                ProductDataService.get(id)
+              .then(response => {
+                this.product = response.data;
+                this.convertImageLinkProducts(this.product);
+                console.log(response.data);
+              })
+              .catch(e => {
+                console.log(e);
+              });
+            },
+            convertImageLinkProducts(data) {
+              let list_image_convert = [];
+              [1,2,3,4].forEach(function(index) {
+                console.log(data['product_image_' + index])
+                if (data['product_image_' + index] != null){
+                  list_image_convert.push(process.env.VUE_APP_ROOT+ data['product_image_' + index])
+                }
+              });
+              this.images = list_image_convert;
+              this.imageSelected = this.images[0];
             }
         },
         components: {},
         mounted() {
+            this.getProduct(this.$route.params.id);
+            console.log(this.$route.params.id);
             // add external script hereeee
             // let recaptchaScript = document.createElement('script')
             // let recaptchaScript2 = document.createElement('script')
@@ -358,13 +297,7 @@
 
         },
         computed: {},
-        methods: {
-            selectImage(image) {
-                this.imageSelected = image;
-            }
-
-
-        }
+        
 
 
     };
