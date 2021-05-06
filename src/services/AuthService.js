@@ -4,7 +4,6 @@ class AuthService {
   getToken() {
     return http.post("/token");
   }
-
   refreshToken() {
     return http.post("/refresh");
   }
@@ -13,9 +12,7 @@ class AuthService {
   }
   getListUser() {
     return http.get("/users/");
-  }
-
-  
+  } 
 }
 
 export default new AuthService();
