@@ -536,8 +536,8 @@ html, body {
     border: 1px solid #B7B7B7;
 }
 .auction-today-post img, .product-detail-image-wrapper img{
-    height: auto;
-    min-height: 160px;
+    height: 160px;
+    /* min-height: 160px; */
     width: 100%;
 }
 #footer-container{
@@ -673,6 +673,9 @@ html, body {
     color: #ffffff;
     background-color: #E84A4A;
 }
+.admin-product-create-step {
+    max-width: 800px;
+}
 .admin-product-create-step .p-title{
     width: 200px;
 }
@@ -758,4 +761,10 @@ html, body {
 }
 .list-images-product-detail:hover{
     overflow: auto;
+}
+
+.product_detail_data_html {
+    height: auto;
+    max-height: 1000px;
+    overflow-y: scroll;
 }

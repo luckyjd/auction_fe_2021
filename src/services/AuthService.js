@@ -5,10 +5,17 @@ class AuthService {
     return http.post("/token");
   }
 
-  refreshToken(id) {
+  refreshToken() {
     return http.post("/refresh");
   }
+  getUser() {
+    return http.get("/user/");
+  }
+  getListUser() {
+    return http.get("/users/");
+  }
+
   
 }
 
-export default new ProductDataService();
+export default new AuthService();

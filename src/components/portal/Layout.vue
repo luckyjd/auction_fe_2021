@@ -100,7 +100,7 @@
 <script>
     import ModalLogin from "./ModalLogin";
     import ModalRegister from "./ModalRegister";
-
+    
     export default {
         name: "Layout",
         components: {
@@ -118,6 +118,7 @@
             openModalLogin() {
                 this.$bvModal.hide('modal-register')
                 this.$bvModal.show('modal-login')
+
             }
         }
     }
