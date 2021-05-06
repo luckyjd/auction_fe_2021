@@ -18,9 +18,19 @@ export default new Router({
           component: () => import("./components/portal/Homepage")
         },
         {
+          path: "/users",
+          name: "users",
+          component: () => import("./components/portal/Users")
+        },
+        {
           path: "/news",
           name: "news",
           component: () => import("./components/portal/News")
+        },
+        {
+          path: "/news/path",
+          name: "news_detail",
+          component: () => import("./components/portal/NewsDetail")
         },
         {
           path: "/products",
