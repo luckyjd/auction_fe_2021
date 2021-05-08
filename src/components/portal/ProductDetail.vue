@@ -42,7 +42,7 @@
               <div class="font-14 font-medium" style="color: #555555;">Giá khởi điểm</div>
               <div class="font-14 font-medium" style="color: #8A91A1;">36.000.000 đ</div>
             </div>
-            <div class="col-12 p-25-50" style="background: #F4F6F8">
+            <div class="col-12 p-25-50" style="background: #F4F6F8" v-show="false">
               <div class="col-12 p-0 d-flex justify-content-between pb-8p">
                 <div class="font-14 font-medium" style="color: #555555;">Đặt giá</div>
                 <div class="font-12 font-medium" style="color: #333333;">Bước giá 1.000.000 đ</div>
@@ -55,6 +55,19 @@
                 <div class="font-14 font-medium">
                   <button type="button" class="btn ml-24p pt-4p pb-4p pl-24p pr-24p"
                           style="background:#713C39; color:#ffffff">Đấu giá
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 p-25-50" style="background: #F4F6F8" v-show="true">
+              <div class="col-12 p-0 pb-8p font-16 font-bold text-center"> Bạn cần hoàn thiện thông tin 
+                
+              </div>
+              <div class="col-12 p-0 d-flex justify-content-center pl-24p pr-24p pb-12p">
+                <div class="font-14 font-medium">
+                  <button type="button" class="btn ml-24p pt-4p pb-4p pl-24p pr-24p"
+                          style="background:#713C39; color:#ffffff" @click="updateInfo()">
+                          Cập nhật thông tin
                   </button>
                 </div>
               </div>
@@ -280,7 +293,10 @@
               });
               this.images = list_image_convert;
               this.imageSelected = this.images[0];
-            }
+            },
+            updateInfo() {
+              this.$router.push({ name: 'users'})
+    },
         },
         components: {},
         mounted() {

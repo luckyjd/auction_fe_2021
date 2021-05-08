@@ -712,14 +712,15 @@ html, body {
 }
 .product-detail-add-user-wrapper{
     height: 100%;
-    width: 200px;
-    background-color: aqua;
+    width: 300px;
+    border-left: 1px solid #dad9d9;
 }
 
 .product-detail-wrapper{
     height: 100%;
     max-height: 90vh;
     overflow: scroll;
+    width: calc(100% - 300px);
 }
 .product_detail_data_wrapper { 
     max-height: calc(100% - 158px);
@@ -739,6 +740,9 @@ html, body {
 }
 .br-1p{
     border-right: 1px solid #ccc;
+}
+.bdr-b-1p{
+    border-bottom: 1px solid #ccc;
 }
 .bdr-1p{
     border: 1px solid #ccc;

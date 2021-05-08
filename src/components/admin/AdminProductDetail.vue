@@ -20,7 +20,7 @@
             - Bước giá <span class="font-14 ml-8p" style="color:#E84A4A;">{{numberWithCommas(data.product_step_prize)}} đ </span>
           </div>
         </div>
-        <div class="row row-no-margin product-detail-image-wrapper pt-24p pb-24p" style="border-bottom: 1px solid rgb(200, 195, 195);">
+        <div class="row row-no-margin product-detail-image-wrapper pt-20p pb-20p" style="border-bottom: 1px solid rgb(200, 195, 195);">
           <div class="col-12 font-16 font-medium p-0">Hình ảnh</div>
           <div class="col-3 p-8p">
             <img v-bind:src="urlApi() + '/' + data.product_image_1">
@@ -35,22 +35,40 @@
             <img v-bind:src="urlApi() + '/' + data.product_image_4">
           </div>
         </div>
-        <div class="row row-no-margin product_detail_data_wrapper pt-24p pb-24p" v-html="data.product_detail_data"></div>
+        <div class="row row-no-margin product_detail_data_wrapper pt-20p pb-20p">
+          <div class="col-12 font-16 font-medium p-0 pb-8p">Thông tin chi tiết</div>
+          <div class="col-12 font-14 font-medium p-0" v-html="data.product_detail_data"></div>
+        </div>
       </div>
     </div>
     <div class="product-detail-add-user-wrapper">
       <div class="row row-no-margin p-24p">
-
+        <div class="row row-no-margin pt-8p pb-12p font-20 font-bold" style="color: #333333;">
+            Danh sách user đấu giá 
+        </div>
+        <div class="row row-no-margin">
+          <div class="col-12 pt-8p pb-8p bdr-b-1p">user1</div>
+          <div class="col-12 pt-8p pb-8p bdr-b-1p">987654321</div>
+        </div>
+        <div class="row row-no-margin d-flex justify-content-center pt-8p">
+          <button class="btn btn-danger ml-16p bg-color-theme-admin" @click="open_add_user_modal()">Thêm user</button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import AdminUserListModal from "./AdminUserListModal.vue";
 export default {
   name: "AdminProductDetail",
   props: {
     data: Object
+  },
+  data() {
+    return {
+      users : [],
+    }
   },
   methods: {
     numberWithCommas(x) {
@@ -60,6 +78,19 @@ export default {
     },
     urlApi () {
       return process.env.VUE_APP_ROOT;
+    },
+    open_add_user_modal() {
+      this.$modal.show(
+        AdminUserListModal,
+        // {
+        //   data: item
+        // },
+        {
+          draggable: true,
+          height: '90%',
+          width: '90%'
+        }
+      );
     }
   },
   mounted() {
