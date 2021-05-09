@@ -28,7 +28,36 @@
             <i class="fa fa-question-circle" aria-hidden="true"></i>
             <i class="fa fa-cog" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-user-circle-o" @click="$bvModal.show('modal-login')" aria-hidden="true"></i>
+            <b-navbar-nav v-if="login" class="nav-dropdown-custom">
+              <b-nav-item-dropdown right>
+                <!-- Using 'button-content' slot -->
+                <template #button-content>
+                  <em><i class="fa fa-user-circle-o nav-dropdown-icon" aria-hidden="true"></i></em>
+                </template>
+                  <b-dropdown-item href="#">Thông báo <i class="fa fa-circle fa-circle-dropdown" aria-hidden="true"></i></b-dropdown-item>
+                  <b-dropdown-item href="#">Đã lưu</b-dropdown-item>
+                  <hr>
+                  <b-dropdown-item href="#">Quản lý đấu giá <b-badge variant="light">4</b-badge></b-dropdown-item>
+                  <b-dropdown-item href="#">Thông tin tài khoản</b-dropdown-item>
+                <hr>
+                  <b-dropdown-item href="#">Trung tâm trợ giúp</b-dropdown-item>
+                  <b-dropdown-item href="#" @click="login = false">Đăng xuất</b-dropdown-item>
+              </b-nav-item-dropdown>
+            </b-navbar-nav>
+            <b-navbar-nav v-else class="nav-dropdown-custom">
+              <b-nav-item-dropdown right>
+                <!-- Using 'button-content' slot -->
+                <template #button-content>
+                  <i class="fa fa-user-circle-o nav-dropdown-icon" aria-hidden="true"></i>
+                </template>
+                <b-dropdown-item href="#" @click="$bvModal.show('modal-login')">Đăng nhập</b-dropdown-item>
+                <hr>
+                <b-dropdown-item href="#" @click="$bvModal.show('modal-register')">Đăng ký</b-dropdown-item>
+                <b-dropdown-item href="#">Thông tin tài khoản</b-dropdown-item>
+                <hr>
+                <b-dropdown-item href="#">Trung tâm trợ giúp</b-dropdown-item>
+              </b-nav-item-dropdown>
+            </b-navbar-nav>
           </div>
         </div>
       </div>
@@ -88,7 +117,10 @@
         </div>
       </div>
     </div>
-    <ModalLogin @openModalRegister="openModalRegister">
+    <ModalLogin
+      @openModalRegister="openModalRegister"
+      @loginSuccess="loginSuccess"
+    >
 
     </ModalLogin>
     <ModalRegister @openModalLogin="openModalLogin">
@@ -100,7 +132,7 @@
 <script>
     import ModalLogin from "./ModalLogin";
     import ModalRegister from "./ModalRegister";
-    
+
     export default {
         name: "Layout",
         components: {
@@ -108,7 +140,9 @@
             ModalRegister
         },
         data() {
-            return {}
+            return {
+                login: false
+            }
         },
         methods: {
             openModalRegister() {
@@ -119,11 +153,77 @@
                 this.$bvModal.hide('modal-register')
                 this.$bvModal.show('modal-login')
 
+            },
+            loginSuccess() {
+               this.login = true;
+                this.$bvModal.hide('modal-login')
             }
         }
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  ::v-deep {
+
+    #header-container {
+      .nav-dropdown-custom {
+        margin-left: 30px;
+        .dropdown-toggle::after {
+          display: none !important;
+
+        }
+        .b-nav-dropdown {
+          .dropdown-toggle {
+            padding: 0 !important;
+
+            .nav-dropdown-icon {
+              padding: 0;
+            }
+          }
+
+        }
+        .fa-circle-dropdown  {
+          color: red !important;
+          font-size: 7px !important;
+          line-height: 20px;
+          vertical-align: super;
+          padding-left: 7px !important;
+        }
+        .dropdown-menu {
+          padding-bottom: 10px;
+          a {
+            color: #000000;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+          }
+
+          .badge {
+            border-radius: 50%;
+            background: #FF0000 0% 0% no-repeat padding-box;
+            width: 16px;
+            height: 16px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            margin-left: 5px;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+          a:active {
+            background-color: #E9ECEF;
+          }
+        }
+      }
+
+
+
+    }
+
+
+
+  }
+
+
 
 </style>

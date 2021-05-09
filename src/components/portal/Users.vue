@@ -171,10 +171,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="form-group row date">
                     <label class="col-4 col-form-label">Ngày cấp *</label>
                     <div class="row col-8">
-                      <div class="col">
+                      <div class="col date-input">
                         <input name="text" placeholder="Ngày/Tháng/Năm" class="form-control here input-form" required="required"
                                type="text">
                       </div>
@@ -289,6 +289,7 @@
     .user-side {
       background-color: #FFFFFF;
       padding: 16px;
+      height: 500px;
     }
 
     .user-side-top {
@@ -349,7 +350,7 @@
         color: #000000;
         font-size: 14px;
         font-weight: 600;
-        padding: 10px 0;
+        padding: 6px 0;
 
         span {
           margin-left: 10px;
@@ -399,8 +400,31 @@
           }
 
         }
+
+        .phone::after {
+          display: block;
+          content: "";
+          width: 28px;
+          height: 27px;
+          background: transparent url('~@/assets/svg/file.svg') no-repeat;
+          position: absolute;
+          right: 8px;
+          bottom: 0;
+        }
+
         .phone:focus {
           border-color: green
+        }
+
+        .date-input::after {
+          display: block;
+          content: "";
+          width: 34px;
+          height: 33px;
+          background: transparent url('~@/assets/svg/calendar.svg') no-repeat;
+          position: absolute;
+          right: 8px;
+          bottom: 0;
         }
 
         .custom-select {
@@ -429,6 +453,7 @@
             border-radius: 8px;
             padding: 24px 0;
             margin-left: 15px;
+            cursor: pointer;
           }
           .identity-after {
             width: 330px;
@@ -438,6 +463,7 @@
             border-radius: 8px;
             margin-left: 40px;
             padding: 24px 0;
+            cursor: pointer;
           }
         }
 

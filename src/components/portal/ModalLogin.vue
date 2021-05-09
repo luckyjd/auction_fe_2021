@@ -8,7 +8,7 @@
       </div>
     </template>
 
-    <template #default="{ hide }">
+    <template>
       <b-input-group>
         <b-input-group-prepend>
           <span class="input-group-text"><i class="fa fa-mobile fa-lg"></i></span>
@@ -31,7 +31,7 @@
           <a href="#">Quên mật khẩu</a>
         </div>
         <div class="col">
-          <b-button class="btn-login" @click="hide()">Đăng nhập</b-button>
+          <b-button class="btn-login" v-on:click="$emit('loginSuccess')">Đăng nhập</b-button>
         </div>
       </div>
 

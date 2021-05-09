@@ -176,6 +176,16 @@
                 </div>
               </div>
             </div>
+            <div class="col pagination text-center">
+              <a href="#">&laquo;</a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
           </div>
         </div>
       </div>
@@ -236,5 +246,23 @@
     background-color: #ffffff;
     margin-left: 30px;
     padding: 24px;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+
+  .pagination a {
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+  }
+  .pagination {
+    .active {
+      padding: 3px 8px;
+      background-color: #713C39;
+      border-radius: 2px;
+      color: #ffffff;
+    }
   }
 </style>
