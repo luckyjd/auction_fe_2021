@@ -145,8 +145,8 @@ export default {
     },
     retrieveProducts() {
       let filter = JSON.stringify({
-        product_type : 1,
-        product_kind : 2
+        // product_type : 1,
+        // product_kind : 2
       })
       console.log(filter);
       ProductDataService.getAll(8, 0, filter)
