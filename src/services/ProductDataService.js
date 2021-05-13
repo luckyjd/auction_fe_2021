@@ -1,8 +1,8 @@
 import http from "../http-common";
 
 class ProductDataService {
-  getAll(size=8) {
-    return http.get(`/product?size=${size}`);
+  getAll(limit=8, offset=0, filter='') {
+    return http.get(`/product?limit=${limit}&offset=${offset}&filter=${filter}`);
   }
 
   get(id) {

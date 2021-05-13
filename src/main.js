@@ -7,6 +7,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/css/custom.css';
 import './assets/css/common.css';
 import jQuery from 'jquery'
+// window.$ = window.jQuery = require('jquery');
 global.$ = jQuery
 import VueMeta from 'vue-meta'
 Vue.use(VueMeta)
