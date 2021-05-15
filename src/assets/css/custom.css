@@ -772,3 +772,11 @@ html, body {
     max-height: 1000px;
     overflow-y: scroll;
 }
+.filter-item {
+    width: 190px;
+    min-width: 10%;
+}
+.filter-item ul {
+    padding: 1px 0;
+    list-style-type: none;
+}

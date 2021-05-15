@@ -23,42 +23,72 @@
             </div>
             <div class="row row-no-margin d-flex justify-content-start align-items-center">
               <div class="col-8 p-0 d-flex justify-content-start align-items-center">
-                <select  class="form-control m-w-140p">
-                  <option disabled value="" hidden>Tỉnh/Thành phố</option>
-                  <option value="1">Hà Nội</option>
-                  <option value="2">TP HCM</option>
-                  <option value="3">Hải Phòng</option>
-                </select>
-                <select class="form-control m-w-140p ml-20p">
-                  <option disabled value="" hidden>Quận/Huyện</option>
-                  <option value="1">Hoàn Kiếm</option>
-                  <option value="2">Hà Đông</option>
-                  <option value="3">Hoàng Mai</option>
-                </select>
-                <select class="form-control m-w-140p ml-20p">
-                  <option disabled value="" hidden>Xã/Phường</option>
-                  <option value="1">Phú Lương</option>
-                  <option value="2">Vạn Phúc</option>
-                  <option value="3">Nguyễn Trãi</option>
-                </select>
-                <select class="form-control m-w-140p ml-20p">
-                  <option disabled value="" hidden>Xã/Phường</option>
-                  <option value="1">Phú Lương</option>
-                  <option value="2">Vạn Phúc</option>
-                  <option value="3">Nguyễn Trãi</option>
-                </select>
-              </div>
-              <div class="col-4 p-0 d-flex justify-content-end align-items-center flex-column">
-                <div>
-                  <div>Sắp xếp theo</div>
-                <div>
-                  <select class="form-control m-w-140p">
-                  <option disabled value="" hidden>Xã/Phường</option>
-                  <option value="1">Phú Lương</option>
-                  <option value="2">Vạn Phúc</option>
-                  <option value="3">Nguyễn Trãi</option>
-                </select>
+                <div class="filter-item">
+                  <div class="font-bold">Dạng tài sản</div>
+                  <ul>
+                    <li>
+                      <select  class="form-control">
+                        <option disabled value="" hidden>Tỉnh/Thành phố</option>
+                        <option value="1">Hà Nội</option>
+                        <option value="2">TP HCM</option>
+                        <option value="3">Hải Dương</option>
+                      </select>
+                    </li>
+                  </ul>
                 </div>
+                <div class="filter-item pl-16p">
+                  <div class="font-bold">Loại tài sản</div>
+                  <ul>
+                    <li>
+                      <select  class="form-control">
+                        <option disabled value="" hidden>Tỉnh/Thành phố</option>
+                        <option value="1">Hà Nội</option>
+                        <option value="2">TP HCM</option>
+                        <option value="3">Hải Dương</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-item pl-16p">
+                  <div class="font-bold">Địa điểm</div>
+                  <ul>
+                    <li>
+                      <select  class="form-control">
+                        <option disabled value="" hidden>Tỉnh/Thành phố</option>
+                        <option value="1">Hà Nội</option>
+                        <option value="2">TP HCM</option>
+                        <option value="3">Hải Dương</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-item pl-16p">
+                  <div class="font-bold">Trạng thái</div>
+                  <ul>
+                    <li>
+                      <select  class="form-control">
+                        <option disabled value="" hidden>Tỉnh/Thành phố</option>
+                        <option value="1">Hà Nội</option>
+                        <option value="2">TP HCM</option>
+                        <option value="3">Hải Dương</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4 p-0 d-flex justify-content-end">
+                <div class="filter-item">
+                  <div class="font-bold">Sắp xếp theo</div>
+                  <ul>
+                    <li>
+                      <select  class="form-control">
+                        <option disabled value="" hidden>Tỉnh/Thành phố</option>
+                        <option value="1">Hà Nội</option>
+                        <option value="2">TP HCM</option>
+                        <option value="3">Hải Dương</option>
+                      </select>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
