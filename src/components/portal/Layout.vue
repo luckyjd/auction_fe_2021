@@ -148,8 +148,7 @@
             }
         },
         created() {
-            this.$cookies.remove("au_tk_ntx")
-            console.log(this.$cookies.get("au_tk_ntx"));
+            
         },
         methods: {
             openModalRegister() {

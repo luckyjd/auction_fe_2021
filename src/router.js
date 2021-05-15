@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-import {refreshToken} from "./http-common"
 
 Vue.use(Router);
 
@@ -87,7 +86,7 @@ let router = new Router({
 })
 router.beforeEach((to, from, next) => {
   if(to.matched.some(record => record.meta.requiresAuth)) {
-    if (refreshToken == null) {
+    if (Vue.$cookies.get("au_rf_ntx") == null) {
       next({
         name: 'homepage',
         params: { nextUrl: to.fullPath }
