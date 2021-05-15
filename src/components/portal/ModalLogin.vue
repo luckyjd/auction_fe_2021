@@ -13,7 +13,7 @@
         <b-input-group-prepend>
           <span class="input-group-text"><i class="fa fa-mobile fa-lg"></i></span>
         </b-input-group-prepend>
-        <b-form-input class="LoginInput" size="lg" placeholder="Số điện thoại">
+        <b-form-input v-model="data.phone" class="LoginInput" size="lg" placeholder="Số điện thoại">
         </b-form-input>
 
       </b-input-group>
@@ -21,7 +21,7 @@
         <b-input-group-prepend>
           <span class="input-group-text"><i class="fa fa-lock fa-lg"></i></span>
         </b-input-group-prepend>
-        <b-form-input class="LoginInput" size="lg" placeholder="Số điện thoại">
+        <b-form-input v-model="data.password" type="password" class="LoginInput" size="lg" placeholder="Mật khẩu">
         </b-form-input>
 
       </b-input-group>
@@ -31,7 +31,7 @@
           <a href="#">Quên mật khẩu</a>
         </div>
         <div class="col">
-          <b-button class="btn-login" v-on:click="$emit('loginSuccess')">Đăng nhập</b-button>
+          <b-button class="btn-login" v-on:click="handleSubmit($event)">Đăng nhập</b-button>
         </div>
       </div>
 
@@ -48,12 +48,50 @@
 </template>
 
 <script>
+    import AuthService from "../../services/AuthService";
+
     export default {
         name: "ModalLogin",
         props: [
             'modalLogin',
         ],
+        data() {
+            return {
+                data: {
+                    phone: '0123456789',
+                    password: 'admin123456'
+                }
+            }
+        },
         computed: {},
+        methods: {
+            handleSubmit(e) {
+                e.preventDefault()
+                if (this.data.password.length > 0) {
+                    AuthService.getToken(this.data)
+                        .then(response => {
+                            if (response.status === 200) {
+                                this.$cookies.set("au_tk_ntx", response.data.access, "15MIN");
+                                this.$cookies.set("au_rf_ntx", response.data.refresh, "24h");
+
+                                AuthService.getUser()
+                                    .then((res) => {
+                                        let is_admin = res.data.is_staff;
+                                        localStorage.setItem('is_staff', is_admin);
+                                        this.$emit('loggedIn');
+                                    })
+                                    .catch((error) => {
+                                        console.log(error);
+                                    })
+                            }
+                        })
+                        .catch(error => {
+                            console.log(error);
+
+                        });
+                }
+            }
+        }
     }
 </script>
 

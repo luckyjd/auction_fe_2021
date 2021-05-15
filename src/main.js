@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/css/custom.css';
 import './assets/css/common.css';
-import jQuery from 'jquery'
+import jQuery from 'jquery';
+import VueCookies from 'vue-cookies';
 // window.$ = window.jQuery = require('jquery');
 global.$ = jQuery
 import VueMeta from 'vue-meta'
@@ -25,6 +26,8 @@ Vue.use(BootstrapVue)
 
 // Install BootstrapVue icon
 Vue.use(IconsPlugin)
+
+Vue.use(VueCookies);
 
 new Vue({
   router,

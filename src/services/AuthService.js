@@ -1,14 +1,14 @@
 import http from "../http-common";
 
 class AuthService {
-  getToken() {
-    return http.post("/token");
+  async getToken(data) {
+    return await http.post("/token/", data);
   }
   refreshToken() {
     return http.post("/refresh");
   }
-  getUser() {
-    return http.get("/user/");
+  async getUser() {
+    return await http.get("/user/");
   }
   getListUser() {
     return http.get("/users/");

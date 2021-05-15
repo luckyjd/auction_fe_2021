@@ -10,7 +10,7 @@
             </div>
             <div class="col">
               <span>Xin chào,</span> <br>
-              <span class="name">Nguyễn Khánh Hưng</span>
+              <span class="name">{{data.phone ? data.phone : ''}}</span>
             </div>
           </div>
           <div class="row margin-side account-type">
@@ -265,6 +265,8 @@
 </template>
 
 <script>
+    import AuthService from "../../services/AuthService";
+
     export default {
         data() {
             return {
@@ -272,7 +274,22 @@
                 options: [
                     {text: 'First radio', value: 'first'},
                     {text: 'Second radio', value: 'second'}
-                ]
+                ],
+                data: {},
+            }
+        },
+        created() {
+            this.getUser();
+        },
+        methods: {
+            getUser() {
+                AuthService.getUser()
+                    .then((res) => {
+                        this.data = res.data;
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    })
             }
         }
     }

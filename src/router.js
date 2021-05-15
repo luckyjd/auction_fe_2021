@@ -1,9 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
+import {refreshToken} from "./http-common"
 
 Vue.use(Router);
 
-export default new Router({
+let router = new Router({
   mode: "history",
   routes: [
     {
@@ -15,12 +16,19 @@ export default new Router({
           path: "/",
           alias : "/home",
           name: "homepage",
-          component: () => import("./components/portal/Homepage")
+          component: () => import("./components/portal/Homepage"),
+          meta: {
+            guest: true
+          }
         },
         {
           path: "/users",
           name: "users",
-          component: () => import("./components/portal/Users")
+          component: () => import("./components/portal/Users"),
+          meta: {
+            requiresAuth: true,
+            is_user : true
+          }
         },
         {
           path: "/news",
@@ -52,7 +60,11 @@ export default new Router({
         {
           path: "/admin",
           name: "adminpage",
-          component: () => import("./components/admin/AdminProductList")
+          component: () => import("./components/admin/AdminProductList"),
+          meta: {
+            requiresAuth: true,
+            is_admin : true
+          }
         },
         {
           path: "/admin/products",
@@ -72,4 +84,30 @@ export default new Router({
       ]
     }
   ]
-});
+})
+router.beforeEach((to, from, next) => {
+  if(to.matched.some(record => record.meta.requiresAuth)) {
+    if (refreshToken == null) {
+      next({
+        name: 'homepage',
+        params: { nextUrl: to.fullPath }
+      })
+    } else {
+      let is_staff = localStorage.getItem('is_staff')
+      if(to.matched.some(record => record.meta.is_admin)) {
+        if(is_staff === 'true'){
+          next()
+        }
+        else{
+          next({ name: 'homepage'})
+        }
+      }else {
+        next()
+      }
+    }
+  } else {
+    next()
+  }
+})
+
+export default router;

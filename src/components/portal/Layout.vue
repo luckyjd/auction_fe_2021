@@ -34,14 +34,17 @@
                 <template #button-content>
                   <em><i class="fa fa-user-circle-o nav-dropdown-icon" aria-hidden="true"></i></em>
                 </template>
-                  <b-dropdown-item href="#">Thông báo <i class="fa fa-circle fa-circle-dropdown" aria-hidden="true"></i></b-dropdown-item>
-                  <b-dropdown-item href="#">Đã lưu</b-dropdown-item>
-                  <hr>
-                  <b-dropdown-item href="#">Quản lý đấu giá <b-badge variant="light">4</b-badge></b-dropdown-item>
-                  <b-dropdown-item href="#">Thông tin tài khoản</b-dropdown-item>
+                <b-dropdown-item href="#">Thông báo <i class="fa fa-circle fa-circle-dropdown" aria-hidden="true"></i>
+                </b-dropdown-item>
+                <b-dropdown-item href="#">Đã lưu</b-dropdown-item>
                 <hr>
-                  <b-dropdown-item href="#">Trung tâm trợ giúp</b-dropdown-item>
-                  <b-dropdown-item href="#" @click="login = false">Đăng xuất</b-dropdown-item>
+                <b-dropdown-item href="#">Quản lý đấu giá
+                  <b-badge variant="light">4</b-badge>
+                </b-dropdown-item>
+                <b-dropdown-item href="#">Thông tin tài khoản</b-dropdown-item>
+                <hr>
+                <b-dropdown-item href="#">Trung tâm trợ giúp</b-dropdown-item>
+                <b-dropdown-item href="#" @click="logout()">Đăng xuất</b-dropdown-item>
               </b-nav-item-dropdown>
             </b-navbar-nav>
             <b-navbar-nav v-else class="nav-dropdown-custom">
@@ -119,7 +122,7 @@
     </div>
     <ModalLogin
       @openModalRegister="openModalRegister"
-      @loginSuccess="loginSuccess"
+      @loggedIn="loginSuccess"
     >
 
     </ModalLogin>
@@ -141,8 +144,12 @@
         },
         data() {
             return {
-                login: false
+                login: this.$cookies.get("au_rf_ntx")
             }
+        },
+        created() {
+            this.$cookies.remove("au_tk_ntx")
+            console.log(this.$cookies.get("au_tk_ntx"));
         },
         methods: {
             openModalRegister() {
@@ -155,8 +162,15 @@
 
             },
             loginSuccess() {
-               this.login = true;
-                this.$bvModal.hide('modal-login')
+                this.login = true;
+                this.$bvModal.hide('modal-login');
+            },
+            logout() {
+                this.login = false;
+                this.$cookies.remove("au_tk_ntx");
+                this.$cookies.remove("au_rf_ntx");
+                localStorage.removeItem('is_staff');
+                this.$router.push({name: 'home'})
             }
         }
     }
@@ -166,12 +180,16 @@
   ::v-deep {
 
     #header-container {
+      height: 56px;
+
       .nav-dropdown-custom {
         margin-left: 30px;
+
         .dropdown-toggle::after {
           display: none !important;
 
         }
+
         .b-nav-dropdown {
           .dropdown-toggle {
             padding: 0 !important;
@@ -182,15 +200,20 @@
           }
 
         }
-        .fa-circle-dropdown  {
+
+        .fa-circle-dropdown {
           color: red !important;
           font-size: 7px !important;
           line-height: 20px;
           vertical-align: super;
           padding-left: 7px !important;
         }
+
         .dropdown-menu {
           padding-bottom: 10px;
+          top: 8px !important;
+          box-shadow: 0px 3px 6px #00000029;
+
           a {
             color: #000000;
             font-size: 14px;
@@ -207,9 +230,11 @@
             letter-spacing: 0;
             margin-left: 5px;
           }
+
           a:hover {
             text-decoration: none;
           }
+
           a:active {
             background-color: #E9ECEF;
           }
@@ -217,13 +242,10 @@
       }
 
 
-
     }
 
 
-
   }
-
 
 
 </style>
