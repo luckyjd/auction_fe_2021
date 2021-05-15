@@ -49,6 +49,7 @@
 
 <script>
     import AuthService from "../../services/AuthService";
+    import {setAuthHeader} from "../../http-common";
 
     export default {
         name: "ModalLogin",
@@ -74,6 +75,7 @@
                                 this.$cookies.set("au_tk_ntx", response.data.access, "15MIN");
                                 this.$cookies.set("au_rf_ntx", response.data.refresh, "24h");
 
+                                setAuthHeader(response.data.access);
                                 AuthService.getUser()
                                     .then((res) => {
                                         let is_admin = res.data.is_staff;
