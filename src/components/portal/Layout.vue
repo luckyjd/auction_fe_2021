@@ -41,7 +41,9 @@
                 <b-dropdown-item href="#">Quản lý đấu giá
                   <b-badge variant="light">4</b-badge>
                 </b-dropdown-item>
-                <b-dropdown-item href="#">Thông tin tài khoản</b-dropdown-item>
+                <b-dropdown-item>
+                  <router-link to="/users">Thông tin tài khoản</router-link>
+                  </b-dropdown-item>
                 <hr>
                 <b-dropdown-item href="#">Trung tâm trợ giúp</b-dropdown-item>
                 <b-dropdown-item href="#" @click="logout()">Đăng xuất</b-dropdown-item>
@@ -169,7 +171,7 @@
                 this.$cookies.remove("au_tk_ntx");
                 this.$cookies.remove("au_rf_ntx");
                 localStorage.removeItem('is_staff');
-                this.$router.push({name: 'home'})
+                this.$router.push({name: 'homepage'})
             }
         }
     }
