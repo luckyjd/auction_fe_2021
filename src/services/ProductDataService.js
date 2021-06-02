@@ -28,6 +28,14 @@ class ProductDataService {
   // findByTitle(title) {
   //   return http.get(`/product?title=${title}`);
   // }
+
+  getCategoryProduct() {
+    return http.get(`/property/category`);
+  }
+
+  getTypesProduct() {
+    return http.get(`/property/type`);
+  }
 }
 
 export default new ProductDataService();

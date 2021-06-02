@@ -4,7 +4,7 @@ import VueCookies from 'vue-cookies'
 Vue.use(VueCookies)
 
 const axiosApi = axios.create({
-  baseURL: (process.env.VUE_APP_ROOT_API !== undefined) ? process.env.VUE_APP_ROOT_API : "http://ec2-54-169-161-14.ap-southeast-1.compute.amazonaws.com/api",
+  baseURL: (process.env.VUE_APP_ROOT_API !== undefined) ? process.env.VUE_APP_ROOT_API : "http://127.0.0.1:8000/api",
   // baseURL: process.env.VUE_APP_ROOT_API,
   headers: {
     "Content-type": "application/json"

@@ -55,6 +55,9 @@ let router = new Router({
       path: "/admin",
       name: "admin",
       component: () => import("./components/admin/AdminLayout"),
+      meta: {
+        requiresAuth: true,
+      },
       children : [
         {
           path: "/admin",
@@ -62,7 +65,6 @@ let router = new Router({
           component: () => import("./components/admin/AdminProductList"),
           meta: {
             requiresAuth: true,
-            is_admin : true
           }
         },
         {
